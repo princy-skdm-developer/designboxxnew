@@ -1,0 +1,54 @@
+.Tabs-container {
+    /* margin: 60px 0px 50px 0px; */
+    /* background-color: #3b3b3b; */
+    padding: 20px 0px;
+}
+
+.ButtonG {
+    border:1px solid #eee;
+    color: #999999;
+    font-weight: 600;
+    font-family: var(---FontFirst);
+}
+
+.btn:hover{
+    background-color: transparent !important;
+}
+.TabContainer {
+    background-color: #fff;
+    max-width: 768px;
+    margin: 0 auto 4rem auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .TabContainer:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .Tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    color: #fff;
+    background-color: #9c4dcc;
+  }
+  
+  .Tab {
+    flex: 1 0 auto;
+    padding: 1rem 1.5rem calc(1rem - 4px);
+    border-bottom: 4px solid transparent;
+    
+  }
+  .Tab:hover {
+    cursor: pointer;
+    border-bottom: 4px solid #fbc2eb;
+  }
+  .Tab.is-selected {
+    border-bottom: 4px solid #fbc2eb;
+  }
+  
+  .TabPanel {
+    color: #000;
+    padding: 1rem;
+  }

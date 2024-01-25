@@ -1,0 +1,170 @@
+
+/* ============================================================== 
+     # Portfolio
+=================================================================== */
+.portfolio-area.default-padding {
+    padding-bottom: 105px;
+  }
+  
+  .portfolio-area .mix-item-menu {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .portfolio-area .mix-item-menu button {
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #002147;
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    margin: 0 2px 5px;
+    padding: 8px 15px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+  }
+  
+  .portfolio-area .mix-item-menu button.active,
+  .portfolio-area .mix-item-menu button:hover {
+    border: 1px solid #e7e7e7;
+  }
+  
+  .portfolio-area .pf-item {
+    float: left;
+    padding: 15px;
+    width: 33.333%;
+  }
+  
+  .portfolio-area .portfolio-items.col-2 .pf-item {
+    width: 50%;
+  }
+  
+  .portfolio-area .portfolio-items.col-4 .pf-item {
+    width: 25%;
+  }
+  
+  .portfolio-area .portfolio-items.col-6 .pf-item {
+    width: 16.666%;
+  }
+  
+  /* Hover Effect */
+  .portfolio-items-area .pf-item .item-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect .overlay {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect a {
+    background: #ffffff none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #002147;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 1px;
+    opacity: 0;
+    -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    width: 45px;
+  }
+  
+  .portfolio-items-area .portfolio-items.col-6 .pf-item .item-effect a {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect:hover a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect:hover a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect:hover img {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background-position: top;
+    -webkit-filter: grayscale(0.4) blur(2px);
+    filter: grayscale(0.4) blur(2px);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.45s;
+    -o-transition-duration: 0.45s;
+    -webkit-transition-duration: 0.45s;
+    transition-duration: 0.45s;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect:hover img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+  }
+  
+  .portfolio-items-area .pf-item .item-effect img {
+    display: inline-block;
+    -moz-transform: scale(1.09, 1.09);
+    -ms-transform: scale(1.09, 1.09);
+    -webkit-transform: scale(1.09, 1.09);
+    transform: scale(1.09, 1.09);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  

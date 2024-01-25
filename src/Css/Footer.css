@@ -1,0 +1,593 @@
+/* ============================================================== 
+     # Footer 
+=================================================================== */
+footer{
+    background:#eee;
+}
+footer  .item {
+    padding-right: 30px;
+    
+  }
+  
+  footer  .item:last-child {
+    padding-right: 15px;
+  }
+  
+  /* .f-items {
+    overflow: hidden;
+  } */
+  
+  footer p {
+    color: #cccccc;
+    text-align:left;
+  }
+  
+  footer.bg-fixed  p {
+    color:#000;
+  }
+  
+  footer.bg-light  p {
+    color: #000;
+  }
+  
+  footer .f-item > h3,
+  footer .f-item > h4,
+  footer .f-item > h5 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: left;
+    color:var(---primeColor);
+  }
+  
+  footer .f-item > img {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  
+  footer p.text-italic {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  footer p.text-italic {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  footer .subscribe form {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    position: relative;
+    width: 100%;
+  }
+  
+  footer .subscribe form input {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    box-shadow: inherit;
+    padding: 0 20px;
+  }
+  
+  footer.bg-light .subscribe form input {
+    border: 1px solid #e7e7e7;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    width: 100%;
+  }
+  
+  footer.bg-fixed .subscribe form input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+  }
+  
+  footer .subscribe form {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    padding: 0;
+  }
+  
+  footer .subscribe form button {
+    background: #ffffff none repeat scroll 0 0;
+    border: medium none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: #ffb606;
+    font-size: 20px;
+    min-height: 40px;
+    padding: 0 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 9;
+  }
+  
+  footer .subscribe form .input-group {
+    width: 100%;
+  }
+  
+  footer.bg-light .subscribe form button {
+    background: #ffb606 none repeat scroll 0 0;
+    color: #ffffff;
+  }
+  
+  footer .f-item.address i, 
+  footer .f-item.address p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:left;
+  }
+  
+  footer .f-item.address i {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color:var(---primeColor);
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    font-size: 20px;
+  }
+  
+  footer.bg-light .f-item.address i {
+    border: 1px solid #e7e7e7;
+    color: var(---primeColor);
+  }
+  
+  footer.bg-fixed .f-item.address i {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  footer .f-item.address p {
+    font-weight: 500;
+    margin: 0;
+    padding-left: 10px;
+    text-transform: Capitalize;
+    text-align:left;
+    color:#111;
+  }
+  
+  footer .f-item.address p span {
+    display: block;
+    text-transform: lowercase;
+  }
+  
+  footer .f-item.address li {
+    margin-bottom: 15px;
+  }
+  
+  footer .f-item.address li:last-child {
+    margin: 0;
+    color:#000;
+  }
+  
+  footer .f-item.address li a {
+    color: #000;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  footer.bg-fixed .f-item.address li a {
+    color: #ffffff;
+  }
+  
+  footer.bg-light .f-item.address li a {
+    color: #666666;
+    font-family: "Open Sans",sans-serif;
+    font-weight: normal;
+  }
+  
+  footer .opening-info {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    color: #cccccc;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: left;
+  }
+  
+  footer.bg-light .opening-info {
+    border-top: 1px dashed #e7e7e7;
+    color: #666666;
+  }
+  
+  footer.bg-fixed .opening-info {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+  
+  footer .opening-info h5 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color:#000;
+  }
+  
+  footer .opening-info li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px !important;
+    padding-bottom: 10px;
+  }
+  
+  footer.bg-light .opening-info li {
+    border-bottom: 1px dashed #cccccc;
+    color: #666666;
+  }
+  
+  footer.bg-fixed .opening-info li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+  }
+  
+  footer .opening-info li:last-child {
+    border: medium none;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  
+  /* Recent Post */
+  footer .f-item.recent-post li a {
+    color: #cccccc;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  footer.bg-fixed .f-item.recent-post li a {
+    color: #000;
+  }
+  
+  footer.bg-light .f-item.recent-post li a {
+    color: #002147;
+  }
+  
+  footer .f-item.recent-post li a:last-child {
+    display: inline-block;
+    font-weight: 400;
+  }
+  
+  footer .f-item.recent-post .meta-title {
+    color: #cccccc;
+    font-family: "Poppins",sans-serif;
+    margin-top: 10px;
+  }
+  
+  footer.bg-light .f-item.recent-post .meta-title {
+    color: #666666;
+  }
+  
+  footer.bg-fixed .f-item.recent-post .meta-title {
+    color: #ffffff;
+  }
+  
+  footer.bg-fixed .f-item.recent-post .meta-title {
+    color: #ffffff;
+  }
+  
+  footer .f-item.recent-post li a:hover {
+    color: #ffb606;
+  }
+  
+  footer .f-item.recent-post li a span {
+    display: inline-block;
+    color: #cccccc;
+  }
+  
+  footer .f-item.recent-post li span {
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  
+  footer .f-item.recent-post .meta-title a {
+    text-transform: capitalize;
+  }
+  
+  footer .f-item.recent-post li {
+    color: #cccccc;
+  }
+  
+  footer.bg-fixed .f-item.recent-post li {
+    color: #ffffff;
+  }
+  
+  footer.bg-light .f-item.recent-post li {
+    color: #666666;
+  }
+  
+  footer .f-item.recent-post li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  
+  footer.bg-fixed .f-item.recent-post li {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+  
+  footer .f-item.recent-post li:last-child {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .f-item.recent-post li:last-child {
+    margin: 0;
+  }
+  
+  footer .f-item.recent-post li .thumb {
+    display: table-cell;
+    padding-top: 5px;
+    vertical-align: top;
+    width: 80px;
+  }
+  
+  footer .f-item .thumb img {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  footer .f-item.recent-post li .info {
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: top;
+    line-height: 26px;
+    color: #837f7e;
+  }
+  
+  /* Footer Social */
+  footer .social li {
+    display: inline-block;
+  }
+  
+  footer .social li a {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 39px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px;
+    font-weight: 500;
+  }
+  
+  footer.bg-light .social li a {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    color: #002147;
+    line-height: 40px;
+  }
+  
+  footer.bg-light .social li a:hover {
+    background: #002147 none repeat scroll 0 0;
+    border: medium none;
+    color: #ffffff;
+    border: 1px solid transparent;
+  }
+  
+  footer.bg-fixed .social li a {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+  }
+  
+  footer .social li a:hover {
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  footer.bg-fixed .social li a:hover {
+    border: 1px solid transparent;
+    background-color: #ffffff;
+    color: #ffb606;
+  }
+  
+  footer .social {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  
+  footer.bg-fixed .social {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Footer Link */
+  footer .f-item > img {
+    margin-bottom: 30px;
+  }
+  
+  footer .f-item.link li {
+    display: block;
+    margin-bottom: 15px;
+    list-style: none;
+  }
+  
+  footer .f-item.link li a {
+    color: #000;
+    display: inline-block;
+    font-weight: 400;
+    padding-left: 15px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: "Open Sans",sans-serif;
+   
+  }
+  
+  footer.bg-fixed .f-item.link li a {
+    color: #ffffff;
+  }
+  
+  footer.bg-light .f-item.link li a {
+    color: #666666;
+  }
+  
+  footer .f-item.link li a::before {
+    background: #cccccc none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    left: 0;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 4px;
+  }
+  
+  footer.bg-fixed .f-item.link li a::before {
+    background: #ffffff none repeat scroll 0 0;
+  }
+  
+  footer.bg-light .f-item.link li a::before {
+    background: #666666 none repeat scroll 0 0;
+  }
+  
+  footer .f-item.link li a:hover {
+    color: #ffb606;
+  }
+  
+  
+  /* Twitter Widget */
+  footer .f-item.twitter-widget .twitter-item {
+    border-bottom: 1px solid #363636;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  
+  footer .f-item.twitter-widget .twitter-content p {
+    margin: 0;
+  }
+  
+  footer .f-item.twitter-widget .twitter-content a {
+    color: #ffffff;
+  }
+  
+  footer .f-item.twitter-widget .twitter-content a:hover {
+    color: #ffb606;
+  }
+  
+  footer .f-item.twitter-widget .twitter-context {
+    color: #cccccc;
+    margin: 5px 0 0;
+  }
+  
+  footer .f-item.twitter-widget .twitter-context i {
+    color: #ffb606;
+    margin-right: 3px;
+  }
+  
+  footer .f-item.twitter-widget .twitter-item:last-child {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Footer Bottom */
+  /* .footer-bottom .col-md-6:first-child {
+    padding-left: 0;
+  } */
+  
+  .footer-bottom .col-md-6:last-child {
+    padding-right: 0;
+  }
+  
+  .footer-bottom .link li {
+    display: inline-block;
+  }
+  
+  .footer-bottom .link li a {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 10px;
+    padding-left: 15px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+  .footer-bottom.bg-light .link li a {
+    color: #666666;
+  }
+  
+  .footer-bottom .link li a::before {
+    background: #ffffff none repeat scroll 0 0;
+    content: "";
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    width: 1px;
+  }
+  
+  .footer-bottom .link li:first-child a::before {
+    display: none;
+  }
+  
+  .footer-bottom.bg-light .link li a::before {
+    background: #999999 none repeat scroll 0 0;
+  }
+  
+  .footer-bottom .link li:first-child a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-bottom .link li:first-child::before {
+    display: none;
+  }
+  
+  .footer-bottom .link li a:hover {
+    color: #ffb606;
+  }
+  
+  footer .footer-bottom p a {
+    color: #eee;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  
+  footer .footer-bottom {
+    background:var(---primeColor) none repeat scroll 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+    padding: 20px 0;
+  }
+  
+  footer .footer-bottom.bg-light {
+    background: #ffffff none repeat scroll 0 0;
+    border-top: 1px solid #e7e7e7;
+  }
+  
+  footer .footer-bottom.bg-transparent {
+    background: transparent none repeat scroll 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  footer .footer-bottom p {
+    color: #ffffff;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 40px;
+  }
+  
+  footer .footer-bottom.bg-light p {
+    color: #666666;
+  }
+  
+  
+ .f-item p{
+  color:#000;
+ }

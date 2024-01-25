@@ -1,0 +1,246 @@
+/* .content{
+    padding:50px 0;
+   
+} */
+.content p{
+    text-align:justify;
+}
+.content img
+{
+    height:300px;
+
+}
+.page-content {
+    padding: 50px 0;
+}
+
+@media(max-width: 767px) {
+    .page-content {
+        padding:50px 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .page-content-inner img {
+        width:100%!important;
+        height: auto!important;
+    }
+}
+
+.spacer {
+    height: 80px;
+}
+
+/* .bg-gray {
+    background-color: #f6f6f6;
+} */
+
+.padding {
+    padding: 80px 0;
+}
+
+.heading3 {
+    margin-bottom: 30px;
+}
+
+.heading3 .separator {
+    border-bottom: 3px solid #eea808;
+    width: 100px;
+    display: inline-block;
+}
+
+.heading3 .bg {
+    font-family: "Gordita",sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    color: #efefef;
+    text-transform: uppercase;
+    z-index: 1;
+    line-height: 100%;
+}
+
+.heading3 h2 {
+    font-family: "Gordita",sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #555;
+    line-height: 45px;
+    padding: 0!important;
+}
+
+.heading3 h3 {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    letter-spacing: 10px;
+    padding: 0 0 15px 0;
+}
+
+.heading3.left {
+    text-align: left;
+}
+
+.heading3.right {
+    text-align: right;
+}
+
+.yt-thumb {
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+.yt-thumb img {
+    display: inline-block;
+    width: 100%;
+    height: 75%;
+    margin: -10% 0;
+}
+.franchisee-partners {
+    /* background: #f7f2ee url(/img/partners-bg.jpg) scroll no-repeat center top; */
+    background-size: 100% auto;
+    padding: 50px 0 50px 0;
+}
+
+.franchisee-partners .content {
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.franchisee-partners .content h3 {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+@media(max-width: 767px) {
+    .franchisee-partners {
+        padding:120px 0 50px 0;
+    }
+
+    .franchisee-partners .col {
+        margin: 10px 0;
+    }
+}
+
+
+/* ========================= Why Choose Us ======================== */
+
+.whychoose {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+      url(../Images/id-ug-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 60px 0;
+  }
+  
+  .saver {
+    position: relative;
+    min-height: 70px;
+  }
+  
+  .typeChoose {
+    display: flex;
+    padding: 35px 0px;
+    min-height: 250px;
+  }
+  
+  .bc {
+    width: 80px;
+    height: 80px;
+    /* background-color: #eee; */
+    position: absolute;
+    left: -50px;
+    transform: rotate(45deg);
+    border: 2px solid rgb(233 140 20);
+    margin: 1px 5px;
+    /* border-radius: 10px; */
+    /* border-right: 1px solid rgb(233 140 20); */
+    /* box-shadow:5px 8px 5px 4px rgb(233 140 20); */
+  }
+  
+  .hc {
+    position: absolute;
+    left: 68px;
+    padding: 0px 15px;
+  }
+  
+  .bc img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-46deg);
+    padding: 12px;
+  }
+  
+  .typeChoose h3 {
+    color: peru;
+    text-align: left;
+    font-weight:600;
+  }
+  
+  .typeChoose p {
+    text-align: left;
+    color:whitesmoke;
+    font-size: 0.9rem;
+  }
+  .typeChoose li
+  {
+font-size:20px;
+line-height: 30px;
+  }
+  @media (min-width: 300px) and (max-width: 500px) {
+    .typeChoose {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hc {
+      position: unset;
+      left: 68px;
+      padding-left: 70px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hc h3 {
+      font-size: 20px;
+      padding: 10px 10px;
+      text-align: left;
+    }
+  
+    .hc h6 {
+      padding: 10px 10px;
+      text-align: justify;
+    }
+  
+    .bc {
+      width: 50px;
+      height: 50px;
+      /* background-color: #eee; */
+      display: flex;
+      flex-direction: column;
+  
+      position: absolute;
+      left: 5px;
+      transform: rotate(45deg);
+      border: 2px solid rgb(233 140 20);
+      margin: 1px 5px;
+    }
+  
+    .bc img {
+      width: 143%;
+      height: 142%;
+      transform: rotate(-46deg);
+      margin: -10px -8px;
+    }
+  }

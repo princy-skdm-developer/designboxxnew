@@ -1,0 +1,184 @@
+/* ============================================================== 
+     # Contact 
+=================================================================== */
+
+.contact-info-area {
+    padding-bottom: 120px;
+  }
+  
+  .contact-info-area  .item {
+    -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+    padding: 50px 30px;
+    text-align: center;
+    background: #ffffff none repeat scroll 0 0;
+  }
+  
+  .contact-info-area .item i {
+    color:var(---primeColor);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .contact-info-area .item .info {
+    margin-top: 20px;
+  }
+  
+  .contact-info-area  .item .info h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .contact-info-area  .item .info p {
+    margin: 0;
+  }
+  
+  .contact-info-area  .form {
+    padding-left: 35px;
+  }
+  
+  .contact-info-area  {
+    /* display: inline-block; */
+    margin-top: -10px;
+  }
+  
+  .contact-info-area  .maps {
+    overflow: hidden;
+  }
+  
+  .contact-info-area  h2,
+  .contact-info-area  h3,
+  .contact-info-area  h4 {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .contact-info-area  iframe {
+    height: 465px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .contact-info-area .maps-form {
+    display: inline-block;
+    margin-top: -10px;
+  }
+  
+  .contact-info-area .maps-form input {
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+  
+  .contact-info-area .maps-form textarea {
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    box-shadow: inherit;
+    min-height: 150px;
+  }
+  
+  .contact-info-area  button {
+    background:var(---primeColor) none repeat scroll 0 0;
+    border: medium none;
+    color: #ffffff;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    padding: 10px 25px;
+    text-transform: uppercase;
+  }
+  
+  .contact-info-area .maps-form button i {
+    margin-left: 3px;
+  }
+  
+  form img.loader {
+    margin-left: 5px;
+  }
+  
+  .contact-info-area form .alert-notification {
+    padding: 0;
+  }
+  
+  .contact-info-area form .alert-notification h3 {
+    color: green;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-area form .alert-notification .alert-error {
+    background: #e7e7e7 none repeat scroll 0 0;
+    color: red;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  
+  .contact-info-area form .alert-notification .alert-success {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  
+  
+  /* ============================================================== 
+       # 404 
+  =================================================================== */
+  .error-page-area ul li {
+    display: inline-block;
+  }
+  
+  .error-page-area ul li a {
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 2px;
+    text-align: center;
+    width: 40px;
+  }
+  
+  .error-page-area ul {
+    border-top: 1px solid #e7e7e7;
+    margin-top: 30px;
+    padding-top: 28px;
+  }
+  
+  .error-page-area h1 {
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 90px;
+    margin-bottom: 30px;
+  }
+  
+  .error-page-area h2 {
+    font-weight: 600;
+  }
+  
+  .error-page-area a {
+    margin: 15px 3px 0;
+  }
+  
+  .error-page-area li.facebook a {
+    background: #3b5998 none repeat scroll 0 0;
+  }
+  
+  .error-page-area li.twitter a {
+    background: #1da1f2 none repeat scroll 0 0;
+  }
+  
+  .error-page-area li.pinterest a {
+    background: #bd081c none repeat scroll 0 0;
+  }
+  
+  .error-page-area li.g-plus a {
+    background: #db4437 none repeat scroll 0 0;
+  }
+  
+  .error-page-area li.linkedin a {
+    background: #0077b5 none repeat scroll 0 0;
+  }
+  

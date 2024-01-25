@@ -1,0 +1,316 @@
+/* ============================================================== 
+     # Bradcrumb 
+=================================================================== */
+.breadcrumb-area {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:80vh;
+  background-size:cover;
+  background-position: center center;
+  }
+  
+  .breadcrumb-area .breadcrumb {
+    background: transparent none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .breadcrumb-area .breadcrumb li i {
+    color: #ffb606;
+    margin-right: 3px;
+  }
+  
+  .breadcrumb-area .breadcrumb::after {
+    background: #000000 none repeat scroll 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .breadcrumb-area h1 {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  
+  .breadcrumb > li + li::before {
+    color: #ffb606;
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-size: 8px;
+    font-weight: 500;
+    padding: 0 10px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .breadcrumb-area .breadcrumb a, 
+   .breadcrumb-area .breadcrumb li {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins",sans-serif;
+  }
+  
+  .breadcrumb-area .breadcrumb li.active {
+    color: #cccccc;
+  }
+  .ownerImg
+  {
+      height:auto;
+      /* border:3px solid #fff;
+      box-shadow:6px 5px 10px #808080; */
+  }
+  .ownerImg img
+  {
+      width:100%;
+      height:100%;
+  }
+
+  .ownerDesc 
+  {
+      text-align:justify;
+  }
+  .ownerDesc h2
+  {
+  font-size:25px;
+  font-weight:600px;
+  font-family:var(---paraFont);
+  color:#000;
+  text-transform:uppercase;
+  }
+  .ownerDesc h3
+  {
+  font-size:20px;
+  font-weight:600px;
+  font-family:var(---poppinont);
+  color:var(---primecolor);
+  text-transform:uppercase;
+  }
+  .ownerDesc h4
+  {
+  font-size:18px;
+  font-weight:600px;
+  font-family:var(---poppinont);
+  color:var(---primecolor);
+  text-transform:uppercase;
+  }
+  .ownerDesc span
+  {
+  font-size:20px;
+  font-weight:600px;
+  font-family:var(---btnFont);
+  color:#000;
+  text-transform:capitalize;
+  }
+  
+  @media(max-width:500px)
+  {
+      .ownerImg
+  {
+      height:300px;
+      /* border:3px solid #fff;
+      box-shadow:6px 5px 10px #808080; */
+  }
+  .ownerImg img
+  {
+      width:100%;
+      height:100%;
+  }
+  }
+  .about-area
+  {background:whitesmoke;}
+
+  /* -----------------------team------------------- */
+  .info-box {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    /* -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc; */
+    /* background: #ffffff; */
+  }
+  #advisor  .info-box img {
+width:100px;
+height:100px;
+border-radius: 50%;
+  }
+  #advisor .info-title
+  {
+    padding:10px 0 30px 0;
+
+  }
+  #advisor .container
+  {
+    box-shadow:6px 5px 10px #808080;
+  }
+  /* ============================================================== 
+     # Video Button Play
+=================================================================== */
+.video-area {
+  position: relative;
+  padding:50px;
+}
+@media(max-width:600px) and (min-width:200px)
+{
+  .video-area {
+    position: relative;
+    padding:10px;
+  }
+}
+
+.video-play-button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-sizing: content-box;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 40px;
+  margin-top: 50px;
+  position: relative;
+  width: 32px;
+  z-index: 10;
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ffb606  repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ffb606  repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+
+.video-play-button:hover,
+.video-play-button:focus {
+  color: #ffffff;
+}
+
+.video-play-button:hover:after {
+  background-color: #ffb606;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.video-play-button i {
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin-left: 3px;
+}
+
+.video-area .overlay-video {
+  padding-bottom: 35px;
+}
+
+.video-area h2 {
+  font-weight: 600;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  color:#fff;
+}
+
+.video-area h2::after {
+  background: #ffb606 none repeat scroll 0 0;
+
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 30px;
+}
+
+.video-area h2::before {
+  background: #ffb606 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 30px;
+  margin-left: -40px;
+}
+
+.video-area .video-info .overlay-video {
+  display: inline-block;
+  left: inherit;
+  margin: 0;
+  position: relative;
+  top: inherit;
+}
