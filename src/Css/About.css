@@ -9,6 +9,7 @@
   background-size:cover;
   background-position: center center;
   }
+ 
   
   .breadcrumb-area .breadcrumb {
     background: transparent none repeat scroll 0 0;
@@ -66,6 +67,36 @@
   
   .breadcrumb-area .breadcrumb li.active {
     color: #cccccc;
+  }
+  @media(max-width:500px) and (min-width:300px)
+  {
+    .breadcrumb-area {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:50vh;
+      background-size:cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      }
+  }
+  @media(max-width:300px) and (min-width:150px)
+  {
+    .breadcrumb-area {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:30vh;
+      background-size:cover;
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      }
+      .breadcrumb-area h1 {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
   }
   .ownerImg
   {

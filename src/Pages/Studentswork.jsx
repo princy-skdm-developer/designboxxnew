@@ -27,7 +27,7 @@ const Studentswork = () => {
   return (
     <div>
  <div
-        className="breadcrumb-area shadow dark text-center bg-fixed text-light"
+        className="breadcrumb-area shadow dark text-center text-light"
         style={{ backgroundImage: `url(${MyBackgroundImage})` }}
       >
         <div className="container">

@@ -7,8 +7,9 @@ import {Link} from "react-router-dom";
 import aboutImg from "../Images/Carousel and backgrounds -20240115T070201Z-001/Carousel and backgrounds/RJ College/1200 x 794.jpg";
 import fashion from "../Images/1200 x 794 (1).jpg";
 import interior from "../Images/1200 x 794.jpg";
-import campus from "../Images/Back Image ( Home Page ).jpg"
+import campus from "../Images/Carousel and backgrounds -20240115T070201Z-001/Campus.jpg"
 // import MyBackgroundImage from "../Images/16.jpg";
+
 // ----------student work------------------------
 
 import w1 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.45 PM (1).jpeg";
@@ -1340,15 +1341,14 @@ const Home = () => {
                       <div className="form-group">
                         <select style={{}} className='form-control'>
                           <option value={1}>Select Course</option>
-                          <option value={2}>Computer Engineering</option>
-                          <option value={4}>Accounting Technologies</option>
-                          <option value={5}>Web Development</option>
-                          <option value={6}>Machine Language</option>
+                          <option value={2}>B.sc in Fashion Designing</option>
+                          <option value={3}>B.sc in Interior Designing</option>
+                         
                         </select>
                       
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                       <div className="form-group">
                         <select style={{}} className='form-control'>
                           <option value={1}>Select Nearest Location</option>
@@ -1359,7 +1359,7 @@ const Home = () => {
                         </select>
                        
                       </div>
-                    </div>
+                    </div> */}
                     
                     <div className="col-md-12">
                       <button type="submit">Register Now</button>

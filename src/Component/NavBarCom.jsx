@@ -123,7 +123,7 @@ const NavBarCom = () => {
   <div className="top-navbar">
     <div className="container">
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-6 d-lg-block d-none">
           <div className="left">
             <a href="tel:919297769776">
               <i className="fa fa-whatsapp" />

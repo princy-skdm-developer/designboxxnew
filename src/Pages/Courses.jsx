@@ -30,35 +30,22 @@ const Courses = () => {
   const Path = search.pathname;
   const CourseDesc = CourseDescFashion.find((e) => e.Slugs == Path);
   console.log(CourseDesc);
-  // const Course1 = CourseDesc.Heading[0];
-  // const Course2 = CourseDesc.Year[0];
-  // const Course3 = CourseDesc.Year[1];
-  // const Course4 = CourseDesc.Year[2];  
+    
   return (
     <div>
-      <div
-        className="breadcrumb-area shadow dark text-center bg-fixed text-light"
+      <section
+        className="breadcrumb-area shadow dark text-center  text-light"
         style={{ backgroundImage: `url(${MyBackgroundImage})` }}
       >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <h1>{CourseDesc.ServiceName}</h1>
-              {/* <ul className="breadcrumb">
-          <li>
-            <a href="#">
-              <i className="fa fa-home" /> Home
-            </a>
-          </li>
-          <li>
-            <a href="#">Page</a>
-          </li>
-          <li className="active">About</li>
-        </ul> */}
+            
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div>
         <section className="course-page-header">
           <div className="overlay">

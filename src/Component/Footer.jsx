@@ -43,10 +43,10 @@ const Footer = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="/About">About us</a>
               </li>
               <li>
-                <a href="#">Courses</a>
+                <a href="/Courses">Courses</a>
               </li>
              
               {/* <li>
@@ -64,16 +64,16 @@ const Footer = () => {
             <ul>
               <li>
 
-              <li>
-                <a href="#">Reviews</a>
-              </li>
+             
 
                 <a href="#">Whydesignboxx</a>
               </li>
               <li>
-                <a href="#">Students Work</a>
+                <a href="/Studentswork">Students Work</a>
               </li>
-              
+              <li>
+                <a href="/Contact">Contact Us</a>
+              </li>
               {/* <li>
                 <a href="#">LearnPress</a>
               </li>

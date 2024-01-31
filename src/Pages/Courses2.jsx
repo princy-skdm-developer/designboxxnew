@@ -21,8 +21,8 @@ const Courses2 = () => {
   console.log(CourseDesc);
   return (
     <div>
-      <div
-        className="breadcrumb-area shadow dark text-center bg-fixed text-light"
+      <section
+        className="breadcrumb-area shadow dark text-center  text-light"
         style={{ backgroundImage: `url(${MyBackgroundImage})` }}
       >
         <div className="container">
@@ -43,7 +43,7 @@ const Courses2 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div>
         <section className="course-page-header">
           <div className="overlay">

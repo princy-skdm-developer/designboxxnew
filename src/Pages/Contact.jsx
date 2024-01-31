@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <div>
 
-<div
-  className="breadcrumb-area shadow dark text-center bg-fixed text-light"
+<section
+  className="breadcrumb-area shadow dark text-center  text-light"
   style={{ backgroundImage: `url(${MyBackgroundImage})` }}
 >
   <div className="container">
@@ -28,7 +28,7 @@ const Contact = () => {
       </div>
     </div>
   </div>
-</div>
+</section>
 
         <section className="contact-info-area default-padding">
   <div className="container">
@@ -83,87 +83,82 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
             {/* <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981" /> */}
           </div>
         </div>
-        <div className="col-md-6 form">
-          <div className="heading">
-            <h3>Contact Us</h3>
-            <p>
-              Occasional terminated insensible and inhabiting gay. So know do
-              fond to half on. Now who promise was justice new winding
-            </p>
-          </div>
-          <form
-            action="assets/mail/contact.php"
-            method="POST"
-            className="contact-form"
-          >
-            <div className="col-md-12">
-              <div className="row">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    type="text"
-                  />
-                  <span className="alert-error" />
+        <div className="col-md-6 reg-form pb-3">
+                <div className="site-heading text-left">
+                  <h2>Enquire Now</h2>
+                  <p>
+                    Fill the form so we can get to know you and your needs better.
+                  </p>
                 </div>
+                <form action="#">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="First Name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Last Name"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Phone"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Email*"
+                          type="email"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Course</option>
+                          <option value={2}>B.sc in Fashion Designing</option>
+                          <option value={3}>B.sc in Interior Designing</option>
+                         
+                        </select>
+                      
+                      </div>
+                    </div>
+                    {/* <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Nearest Location</option>
+                          <option value={2}>Computer Engineering</option>
+                          <option value={4}>Accounting Technologies</option>
+                          <option value={5}>Web Development</option>
+                          <option value={6}>Machine Language</option>
+                        </select>
+                       
+                      </div>
+                    </div> */}
+                    
+                    <div className="col-md-12">
+                      <button type="submit">Register Now</button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </div>
-            <div className="col-md-12">
-              <div className="row">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Email*"
-                    type="email"
-                  />
-                  <span className="alert-error" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="row">
-                <div className="form-group">
-                  <input
-                    className="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone"
-                    type="text"
-                  />
-                  <span className="alert-error" />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="row">
-                <div className="form-group comments">
-                  <textarea
-                    className="form-control"
-                    id="comments"
-                    name="comments"
-                    placeholder="Tell Me About Courses *"
-                    defaultValue={""}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-md-12">
-              <div className="row">
-                <button type="submit" name="submit" id="submit">
-                  Send Message <i className="fa fa-paper-plane" />
-                </button>
-              </div>
-            </div>
-            {/* Alert Message */}
-            <div className="col-md-12 alert-notification">
-              <div id="message" className="alert-msg" />
-            </div>
-          </form>
-        </div>
+       
       {/* </div> */}
       {/* End Maps & Contact Form */}
     </div>

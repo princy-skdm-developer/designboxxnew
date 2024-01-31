@@ -57,9 +57,9 @@ const About = () => {
   };
   return (
     <div>
-      <div
-        className="breadcrumb-area shadow dark text-center text-light"
-        style={{height:"80vh", backgroundImage: `url(${MyBackgroundImage})`,backgroundSize:"cover", backgroundPosition:"center",backgroundRepeat:"no-repeat" }}
+      <section
+              className="breadcrumb-area shadow dark text-center text-light"
+        style={{backgroundImage: `url(${MyBackgroundImage})` }}
       >
         <div className="container">
           <div className="row">
@@ -79,7 +79,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="about-area1  default-padding">
         <div className="container">
