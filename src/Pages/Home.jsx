@@ -96,7 +96,7 @@ const Home = () => {
                       }}
                     >
                       Become a Job Ready Professional
-                      <br />
+                    
                       Designer
                     </h3>
                   </div>
@@ -115,6 +115,7 @@ const Home = () => {
                             Fashion designing
                           </span>
                         </b>
+                        <br/>
                         <li>Fashion Designer</li>
                         <li>Costume Stylist</li>
                         <li>Garment Constructor</li>
@@ -136,6 +137,7 @@ const Home = () => {
                             Interior Designing
                           </span>
                         </b>
+                        <br/>
                         <li>Interior Designer</li>
                         <li>Furniture Designer</li>
                         <li>Product Designer</li>
@@ -176,12 +178,12 @@ const Home = () => {
                 className="mySwiper1"
               >
                 <SwiperSlide>
-                  <div className="bannerImg">
+                  <div className="bannerImg" id="banner1">
                     <img src={aboutImg} alt="" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="bannerImg">
+                  <div className="bannerImg" id="banner2">
                     <img src={fashion} alt="" />
                   </div>
                 </SwiperSlide>

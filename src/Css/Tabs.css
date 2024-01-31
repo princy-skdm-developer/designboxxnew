@@ -11,9 +11,11 @@
     font-family: var(---FontFirst);
 }
 
-.btn:hover{
+/* .btn:hover{
     background-color: transparent !important;
-}
+    color:#000 !important;
+
+} */
 .TabContainer {
     background-color: #fff;
     max-width: 768px;

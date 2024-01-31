@@ -51,9 +51,26 @@ h5,h5 {
   margin-bottom: 10px;
   font-family: 'Fira Sans', sans-serif;
 }
-.advisor-item .info-box img{
+.advisor-item .info-box{
   height:250px;
   margin-bottom:20px;
+}
+.advisor-item .info-box img{
+  height:100%;
+  width:100%;
+
+}
+@media(max-width:767px) and (min-width:350px)
+{
+  .advisor-item .info-box{
+    height:350px;
+    margin-bottom:20px;
+  }
+  .advisor-item .info-box img{
+    height:100%;
+    width:100%;
+  
+  }
 }
 img {
   border: none;
@@ -160,6 +177,7 @@ b, strong {
  .btn:focus, 
  .btn:hover {
   outline: 0;
+  color:#000;
 }
 
 .btn.circle {
@@ -240,6 +258,8 @@ input {
 
 .shadow.dark::after {
   background: #002147 none repeat scroll 0 0;
+  background-size:cover;
+  background-position: center center;
   content: "";
   height: 100%;
   left: 0;
@@ -256,6 +276,7 @@ input {
   height: 100%;
   left: 0;
   opacity: 0.75;
+  padding:30px 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -470,19 +491,19 @@ input {
   color: #002147;
 }
 
-.btn.btn-light:hover, 
+/* .btn.btn-light:hover, 
  .btn.btn-light:focus {
   background: transparent none repeat scroll 0 0;
   border: 2px solid #ffffff;
   color: #ffffff;
-}
+} */
 
-.btn.btn-light.effect:hover, 
+/* .btn.btn-light.effect:hover, 
  .btn.btn-light.effect:focus {
   background-color: #ffb606;
   color: #ffffff !important;
   border: 2px solid #ffb606;
-}
+} */
 
 .btn.btn-light.border {
   background: transparent;
@@ -3556,7 +3577,21 @@ body, .banner-area,
   border-radius:5px;
 }
 }
-
+@media(max-width:499px) and (min-width:200px)
+{
+  .bannerImg
+{
+  
+  height:50vh;
+  margin:10px;
+  border-radius:5px;
+}
+.bannerImg img{
+  height:100%;
+  width:100%;
+  border-radius:5px;
+}
+}
 .ul-list {
   margin: 0;
   padding: 0;
@@ -3599,7 +3634,17 @@ font-weight: 600;
   background-position: 50% 0;
   background-size: cover;
 }
+@media(max-width:575px) and (min-width:200px)
+{.ul-list li {
+  background: transparent url(../Images/tick-2.png) scroll no-repeat left 10px;
+  background-size: 16px auto;
+  padding: 4px 0 4px 28px;
+  position: relative;
+  width:180px;
+  font-size:14px;
+  display:inline-block;
 
+}}
 .btn-main {
   background-color: #000;
   color: #fff;
@@ -3709,7 +3754,7 @@ font-weight: 600;
     }
 
     .slider-sidebar h3 {
-        font-size: 25px!important;
+        font-size: 22px!important;
         text-align:left;
         font-weight: 600;
     }
@@ -3774,6 +3819,7 @@ font-weight: 600;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .item .icon {

@@ -200,7 +200,7 @@ const NavBarCom = () => {
           collapseOnSelect
           expand="lg"
           variant="dark"
-          className={color ? "NavBar NavBar-bg" : "NavBar"}
+          // className={color ? "NavBar NavBar-bg" : "NavBar"}
           expanded={expanded}
         >
           <Container>
@@ -243,7 +243,7 @@ const NavBarCom = () => {
                             return (
                               <>
                                 <Nav.Link href={`${Slugs}`}>
-                                  <Link  to={`${Slugs}`}  className="dropdown-item">{ServiceName}</Link>
+                                  <Link  to={`${Slugs}`}  className="dropdown-item" onClick={handleNavbarCollapse}>{ServiceName}</Link>
                                 </Nav.Link>
                               </>
                             );
@@ -253,7 +253,7 @@ const NavBarCom = () => {
                             return (
                               <>
                                 <Nav.Link href={`${Slugs}`}>
-                                  <Link  to={`${Slugs}`}  className="dropdown-item">{ServiceName}</Link>
+                                  <Link  to={`${Slugs}`}  className="dropdown-item" onClick={handleNavbarCollapse}>{ServiceName}</Link>
                                 </Nav.Link>
                               </>
                             );

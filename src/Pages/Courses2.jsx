@@ -67,61 +67,9 @@ const Courses2 = () => {
                       </ol>
                     </nav>
                     <h2>{CourseDesc.ServiceName}</h2>
-                    <h3>Duration - 36 Months</h3>
-                    <div className="row" style={{ paddingTop: 30 }}>
-                      <div className="col-auto">
-                        <a href="#enquire" className="btn btn-main scrollto2">
-                          Enquire Now
-                        </a>
-                      </div>
-                      <div className="col">
-                        <a
-                          href="/upload/page/integrated-b-voc-in-media-graphics-and-animation-5-year_437943.pdf"
-                          target="_blank"
-                          className="btn btn-outline-dark"
-                        >
-                          Download Brochure
-                        </a>
-                      </div>
-                    </div>
-                    <div className="art-share">
-                      Share &nbsp;&nbsp;&nbsp;{" "}
-                      <a
-                        target="_blank"
-                        className="fb"
-                        href="http://www.facebook.com/sharer.php?u=https://frameboxx.in/courses/b-voc/integrated-b-voc-in-media-graphics-and-animation-offered-by-silver-oak-university"
-                      >
-                        <i className="fa fa-facebook" />
-                      </a>
-                      <a
-                        target="_blank"
-                        className="tw"
-                        href="https://twitter.com/share?url=https://frameboxx.in/courses/b-voc/integrated-b-voc-in-media-graphics-and-animation-offered-by-silver-oak-university&text=Integrated B.Voc in Media Graphics and Animation (offered by Silver Oak University)&hashtags=B.Voc"
-                      >
-                        <i className="fa fa-twitter" />
-                      </a>
-                      <a
-                        target="_blank"
-                        className="tg"
-                        href="https://t.me/share/url?url=https://frameboxx.in/courses/b-voc/integrated-b-voc-in-media-graphics-and-animation-offered-by-silver-oak-university&text=Integrated B.Voc in Media Graphics and Animation (offered by Silver Oak University)"
-                      >
-                        <i className="fa fa-telegram" />
-                      </a>
-                      <a
-                        target="_blank"
-                        className="wapp"
-                        href="https://api.whatsapp.com/send?text=https://frameboxx.in/courses/b-voc/integrated-b-voc-in-media-graphics-and-animation-offered-by-silver-oak-university Integrated B.Voc in Media Graphics and Animation (offered by Silver Oak University)"
-                      >
-                        <i className="fa fa-whatsapp" />
-                      </a>
-                    </div>
+                    
                   </div>
-                  <div className="col-sm-6">
-                    <img
-                      src="/upload/page/integrated-b-voc-in-media-graphics-and-animation-by-silver_212107x.jpg"
-                      className="img-fluid"
-                    />
-                  </div>
+                
                 </div>
               </div>
             </div>
@@ -136,7 +84,7 @@ const Courses2 = () => {
                     <div className="col-sm-12">
                       <div className="btgrid">
                         <div className="row row-1">
-                          <div className="col col-md-8">
+                          <div className="col col-md-8 col-12">
                             <div className="content">
                               <div className="line-heading">
                                 <h2>About This Course</h2>
@@ -144,7 +92,7 @@ const Courses2 = () => {
                               <p>{CourseDesc.ServicePara1}</p>
                             </div>
                           </div>
-                          <div className="col col-md-4">
+                          <div className="col col-md-4 col-12">
                             <div className="content course-specs">
                               <div className="table-responsive">
                                 <table
@@ -195,7 +143,7 @@ const Courses2 = () => {
                           <Accordion.Item eventKey="0">
                             <Accordion.Header>
                               1st Year &nbsp;
-                              <span>(First Semester & Second Semester)</span>
+                              {/* <span>(First Semester & Second Semester)</span> */}
                             </Accordion.Header>
 
                             <AccordionBody>
@@ -204,8 +152,9 @@ const Courses2 = () => {
                                 className="collapse  show "
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
-                              >
-                                <h5>First Semester</h5>{" "}
+                              >  <div className="line-heading">
+                              <h2>First Semester</h2>
+                            </div> 
                                 <div className="row">
                                   <div className="col-md-4 col-12">
                                   <Table striped bordered hover>
@@ -295,7 +244,9 @@ const Courses2 = () => {
                                
                                
                                 {/* -------------sem2---------- */}
-                                <h5>Second Semester</h5>{" "}
+                                <div className="line-heading">
+                                            <h2>Second Semester</h2>
+                                          </div>
                                <div className="row">
                                 <div className="col-md-6 col-12">
                                 <Table striped bordered hover>
@@ -379,8 +330,12 @@ const Courses2 = () => {
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
                               >
-                                <h5>First Semester</h5>{" "}
-                                <Table striped bordered hover>
+                                 <div className="line-heading">
+                                            <h2>First Semester</h2>
+                                          </div>
+                                          <div className="row">
+                                            <div className="col-md-6 col-12">
+                                            <Table striped bordered hover>
                                   <thead>
                                     <tr>
                                       <th>S.No.</th>
@@ -406,36 +361,10 @@ const Courses2 = () => {
                                     )}
                                   </tbody>
                                 </Table>
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.Furniture.map(
-                                      (donationValue) => (
-                                        <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
-                                        </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                {/* -------------sem2---------- */}
-                                <h5>Second Semester</h5>{" "}
-                               
-                                <Table striped bordered hover>
+                                            </div>
+                                           
+                                              <div className="col-md-6 col-12">
+                                              <Table striped bordered hover>
                                   <thead>
                                     <tr>
                                       <th>S.No.</th>
@@ -461,7 +390,18 @@ const Courses2 = () => {
                                     )}
                                   </tbody>
                                 </Table>
-                                <Table striped bordered hover>
+                                              </div>
+                                          </div>
+                          
+                              
+                                {/* -------------sem2---------- */}
+                                <div className="line-heading">
+                                            <h2>Second Semester</h2>
+                                          </div>
+                               
+                                <div className="row">
+                             
+                                            <Table striped bordered hover>
                                   <thead>
                                     <tr>
                                       <th>S.No.</th>
@@ -487,7 +427,40 @@ const Courses2 = () => {
                                     )}
                                   </tbody>
                                 </Table>
-                                <Table striped bordered hover>
+                                            
+                                            
+                                            <Table striped bordered hover>
+                                  <thead>
+                                    <tr>
+                                      <th>S.No.</th>
+                                      <th>Course</th>
+
+                                     
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {Course2.Furniture.map(
+                                      (donationValue) => (
+                                        <tr>
+                                          <td class="meals">
+                                            <p>{donationValue.Sno}</p>
+                                          </td>
+
+                                          <td class="Donate-amount">
+                                            <p>{donationValue.CName1}</p>
+                                          </td>
+                                         
+                                        </tr>
+                                      )
+                                    )}
+                                  </tbody>
+                                </Table>
+                                           
+                                  
+                                            
+                                            
+                                              
+                                              <Table striped bordered hover>
                                   <thead>
                                     <tr>
                                       <th>S.No.</th>
@@ -513,6 +486,11 @@ const Courses2 = () => {
                                     )}
                                   </tbody>
                                 </Table>
+                                              
+                                             
+                                              </div>
+                               
+                                
                               </div>
                             </AccordionBody>
                           </Accordion.Item>
@@ -533,18 +511,10 @@ const Courses2 = () => {
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
                               >
-                              <h5>First Semester</h5>{" "}
-                              <div className="row">
-                                <div className="col-md-4">
-
-                                </div>
-                                <div className="col-md-4">
-                                  
-                                  </div>
-                                  <div className="col-md-4">
-                                  
-                                  </div>
-                              </div>
+                               <div className="line-heading">
+                                            <h2>First Semester</h2>
+                                          </div>
+                            
                                 <Table striped bordered hover>
                                   <thead>
                                     <tr>
@@ -598,7 +568,9 @@ const Courses2 = () => {
                                   </tbody>
                                 </Table>
                                 {/* -------------sem2---------- */}
-                                <h5>Second Semester</h5>{" "}
+                                <div className="line-heading">
+                                            <h2>Second Semester</h2>
+                                          </div>
                                
                                 <Table striped bordered hover>
                                   <thead>

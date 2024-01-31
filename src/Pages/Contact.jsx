@@ -35,7 +35,7 @@ const Contact = () => {
     <div className="row">
       {/* Start Contact Info */}
       {/* <div className="contact-info"> */}
-        <div className="col-md-4 col-sm-4">
+        <div className="col-md-4 col-12 col-sm-4">
           <div className="item">
             <div className="icon">
               <i className="fa fa-phone" />
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-sm-4">
+        <div className="col-md-4 col-12 col-sm-4">
           <div className="item">
             <div className="icon">
               <i className="fa fa-map-marker" />
@@ -58,7 +58,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-sm-4">
+        <div className="col-md-4 col-12 col-sm-4">
           <div className="item">
             <div className="icon">
               <i className="fa fa-envelope" />

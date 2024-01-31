@@ -10,7 +10,7 @@ const Art = ({data}) => {
  
                          return (
                              <>
-                              <div className="col-md-3 mt-lg-4 mt-2">
+                              <div className="col-lg-3 col-md-6 col-12 mt-lg-4 mt-2">
                <div className="advisor-item">
                  <div className="info-box">
                    <img src={Eventimg} alt="Thumb" />

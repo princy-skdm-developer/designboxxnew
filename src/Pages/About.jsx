@@ -59,7 +59,7 @@ const About = () => {
     <div>
       <div
         className="breadcrumb-area shadow dark text-center text-light"
-        style={{height:"80vh", backgroundImage: `url(${MyBackgroundImage})`,backgroundSize:"100%", backgroundPosition:"center",backgroundRepeat:"no-repeat" }}
+        style={{height:"80vh", backgroundImage: `url(${MyBackgroundImage})`,backgroundSize:"cover", backgroundPosition:"center",backgroundRepeat:"no-repeat" }}
       >
         <div className="container">
           <div className="row">
@@ -261,7 +261,7 @@ const About = () => {
         <div className="container">
           <div className="row">
           
-          <div className="col-md-7 col-12 info">
+          <div className="col-md-7 col-12 info order-lg-1 order-2">
             <div class="ownerDesc">
                     <h3>Rashmi Raut Pagare</h3>
                     <p>Vice President, Designboxx </p>
@@ -290,8 +290,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-5 col-12 pb-3">
-                  <div class="ownerImg ">
+            <div class="col-md-5 col-12 pb-3 order-lg-2 order-1">
+                  <div class="ownerImg " >
                     <img src={aboutImg1} alt="" />
 
                   </div>

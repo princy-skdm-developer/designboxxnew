@@ -117,7 +117,7 @@
   text-transform:capitalize;
   }
   
-  @media(max-width:500px)
+  @media(max-width:350px)
   {
       .ownerImg
   {
@@ -170,7 +170,7 @@ border-radius: 50%;
 {
   .video-area {
     position: relative;
-    padding:10px;
+    /* padding:10px; */
   }
 }
 
