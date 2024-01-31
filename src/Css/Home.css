@@ -3293,7 +3293,7 @@ body, .banner-area,
 
 .clients-review-carousel .info {
   padding-right: 10px;
-  text-align: justify;
+  /* text-align: justify; */
   height:330px;
 }
 
@@ -3541,6 +3541,20 @@ body, .banner-area,
   height:100%;
   width:100%;
   border-radius:5px;
+}
+@media(max-width:965px) and (min-width:500px)
+{
+  .bannerImg
+{
+  height:400px;
+  margin:10px;
+  border-radius:5px;
+}
+.bannerImg img{
+  height:100%;
+  width:100%;
+  border-radius:5px;
+}
 }
 
 .ul-list {

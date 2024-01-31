@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../Css/Courses.css";
-import MyBackgroundImage from "../Images/fashionbanner.jpg";
+import MyBackgroundImage from "../Images/Carousel and backgrounds -20240115T070201Z-001/fashionbanner.jpg";
 import Footer from "../Component/Footer";
 import Accordion from "react-bootstrap/Accordion";
 import { Link, useLocation } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import illus from "../Images/icons/Adobe_Illustrator_CC_icon.svg.png";
 import photoshop from "../Images/icons/Adobe_Photoshop_CC_icon.svg.png";
-import cad from "../Images/icons/autocad-logo-69326D7728-seeklogo.com.png";
+import corel from "../Images/icons/design-in-corel-draw.jpg";
 // import c1 from "../Images/course/fashion-designing-steps.webp";
 // import c2 from "../Images/course/fd2.avif";
 // import c3 from "../Images/course/fd3.jpg";
@@ -183,7 +183,7 @@ const Courses = () => {
                                     </tr>
                                     <tr>
                                       <td>Eligibility</td>
-                                      <td>10th Grade</td>
+                                      <td>12th Grade</td>
                                     </tr>
                                     {/* <tr>
                                       <td>Softwares</td>
@@ -218,7 +218,7 @@ const Courses = () => {
                             <Accordion.Header >
                               
                               1st Year{" "}&nbsp;
-                              <span>(First Semester & Second Semester)</span>
+                              {/* <span>(First Semester & Second Semester)</span> */}
                             </Accordion.Header>
                          
                             <AccordionBody>
@@ -229,7 +229,9 @@ const Courses = () => {
                                 data-parent="#accordionExample266"
                               >
                                 {" "}
-                                <h5>First Semester</h5>{" "}
+                                <div className="line-heading">
+                                            <h2>First Semester</h2>
+                                          </div>
                                 <Table striped bordered hover>
                                   <thead>
                                     <tr>
@@ -258,7 +260,9 @@ const Courses = () => {
                                     )}
                                   </tbody>
                                 </Table>
-                                <h5>Second Semester</h5>{" "}
+                                <div className="line-heading">
+                                            <h2>Second Semester</h2>
+                                          </div>
                                 <Table striped bordered hover>
                                   <thead>
                                     <tr>
@@ -296,8 +300,8 @@ const Courses = () => {
                           <Accordion.Item eventKey="1">
                             <Accordion.Header>
                               {" "}
-                              1st Year{" "}
-                              <span>Two Semesters |4 Softwares </span>
+                              2nd Year{" "}
+                              {/* <span>Two Semesters |4 Softwares </span> */}
                             </Accordion.Header>
                           
                             <AccordionBody>
@@ -385,8 +389,8 @@ const Courses = () => {
                           <Accordion.Item eventKey="2">
                             <Accordion.Header>
                               {" "}
-                              1st Year{" "}
-                              <span>4 Softwares | 9 Artistic Skills</span>
+                              3rd Year{" "}
+                              {/* <span>4 Softwares | 9 Artistic Skills</span> */}
                             </Accordion.Header>
                            
                             <AccordionBody>
@@ -513,11 +517,11 @@ const Courses = () => {
                           <img
                             alt=""
                             height={30}
-                            src={cad}
+                            src={corel}
                             width={30}
                           />
                           <div>
-                            <strong>CAD(Computer Aided Designing)</strong>
+                            <strong>Corel Draw</strong>
                             <br />
                             Vector Graphics &amp; Designing
                           </div>

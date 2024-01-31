@@ -42,7 +42,7 @@ const Contact = () => {
             </div>
             <div className="info">
               <h4>Call Us</h4>
-              <span>+324 119 2343</span>
+              <span>+91 9297769776 </span>
             </div>
           </div>
         </div>
@@ -79,7 +79,8 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
         <div className="col-md-6 maps">
           <h3>Our Location</h3>
           <div className="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7540.942912005292!2d72.9093963!3d19.0869625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62d45927ad1%3A0x9ee4301782e456bd!2sRamniranjan%20Jhunjhunwala%20College%20of%20Arts.%20Science%20%26%20Commerce%20(Empowered%20Autonomous%20Status)!5e0!3m2!1sen!2sin!4v1706682708127!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981" /> */}
           </div>
         </div>
         <div className="col-md-6 form">

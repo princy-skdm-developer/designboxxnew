@@ -101,24 +101,7 @@ const StudWork = [
       Desig:"Senior Faculty, Fashion Designing ",
      
     },
-    // {
-    //   id: 2,
-     
-    //   Category:"Studnets Work",
-    //   Eventimg:w14,
-    //   Tname:"Gayatri Barshi",
-    //   Desig:"Senior Faculty, Fashion Designing ",
-     
-    // },
-    // {
-    //   id: 2,
-     
-    //   Category:"Studnets Work",
-    //   Eventimg:w8,
-    //   Tname:"Gayatri Barshi",
-    //   Desig:"Senior Faculty, Fashion Designing ",
-     
-    // },
+
     {
       id: 2,
      
@@ -205,7 +188,7 @@ const StudWork = [
     {
       id: 4,
      
-      Category:"Parents Meet",
+      Category:"Workshop & Seminar/Meets",
       Eventimg:meet1,
       Tname:"Gayatri Barshi",
       Desig:"Senior Faculty, Fashion Designing ",
@@ -214,7 +197,7 @@ const StudWork = [
     {
       id: 4,
      
-      Category:"Parents Meet",
+      Category:"Workshop & Seminar/Meets",
       Eventimg:meet2,
       Tname:"Gayatri Barshi",
       Desig:"Senior Faculty, Fashion Designing ",
@@ -223,7 +206,7 @@ const StudWork = [
     {
       id: 4,
      
-      Category:"Workshops & Seminars",
+      Category:"Workshop & Seminar/Meets",
       Eventimg:meet3,
       Tname:"Gayatri Barshi",
       Desig:"Senior Faculty, Fashion Designing ",
@@ -232,12 +215,12 @@ const StudWork = [
 
     {
     id:5,
-    Category:"Workshops & Seminars",
+    Category:"Workshop & Seminar/Meets",
       Eventimg:meet4,
   },
   {
     id:6,
-    Category:"Workshops & Seminars",
+    Category:"Workshop & Seminar/Meets",
       Eventimg:meet5,
   },
     

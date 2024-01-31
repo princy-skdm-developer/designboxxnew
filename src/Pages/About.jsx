@@ -147,10 +147,8 @@ const About = () => {
    
               </div>
       
-            {/* <div className="col-md- info">
-             
-              <div class="row"> */}
-                <div class="col-md-6 col-12 pb-3">
+            
+                <div class="col-md-5 col-12 pb-3">
                   <div class="ownerImg ">
                     <img src={aboutImg} alt="" />
 
@@ -160,7 +158,7 @@ const About = () => {
               
               {/* </div> */}
               {/* </div> */}
-            <div className="col-md-6 info">
+            <div className="col-md-7 info">
             <div class="ownerDesc">
                     <h3>Rajesh R. Turakhia</h3>
                     <p>Founder & Chairman Designboxx </p>
@@ -292,12 +290,13 @@ const About = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-md-1 thumb bg-cover" /> */}
-            <div
-              className="col-md-4 thumb bg-cover"
-              style={{ backgroundImage: `url(${aboutImg1})`, height: 400 }}
-            />
-            
+            <div class="col-md-5 col-12 pb-3">
+                  <div class="ownerImg ">
+                    <img src={aboutImg1} alt="" />
+
+                  </div>
+                
+                </div>
             
           </div>
         </div>

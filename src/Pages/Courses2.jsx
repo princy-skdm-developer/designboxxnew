@@ -3,7 +3,7 @@ import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import React, { useState, useEffect } from "react";
 import "../Css/Courses.css";
 import Table from "react-bootstrap/Table";
-import MyBackgroundImage from "../Images/interiorbanner.jpg";
+import MyBackgroundImage from "../Images/Carousel and backgrounds -20240115T070201Z-001/interiorbanner.jpg";
 import Footer from "../Component/Footer";
 import Accordion from "react-bootstrap/Accordion";
 import { Link, useLocation } from "react-router-dom";
@@ -162,7 +162,7 @@ const Courses2 = () => {
                                     </tr>
                                     <tr>
                                       <td>Eligibility</td>
-                                      <td>10th Grade</td>
+                                      <td>12th Grade</td>
                                     </tr>
                                     {/* <tr>
                                       <td>Softwares</td>

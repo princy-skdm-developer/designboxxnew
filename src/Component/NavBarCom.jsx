@@ -143,7 +143,7 @@ const NavBarCom = () => {
               <a
                 className="fb"
                 target="_blank"
-                href="https://www.facebook.com/frameboxx"
+                href="https://www.facebook.com/"
                 title="Follow us on Facebook"
               >
                 <i className="fa fa-facebook" />
@@ -159,7 +159,7 @@ const NavBarCom = () => {
               <a
                 className="ty"
                 target="_blank"
-                href="http://www.youtube.com/myframeboxx"
+                href="http://www.youtube.com/"
                 title="Follow us on Youtube"
               >
                 <i className="fa fa-youtube" />
@@ -167,7 +167,7 @@ const NavBarCom = () => {
               <a
                 className="li"
                 target="_blank"
-                href="https://www.linkedin.com/company/frameboxx"
+                href="https://www.linkedin.com/"
                 title="Follow us on Linkedin"
               >
                 <i className="fa fa-linkedin" />
@@ -175,7 +175,7 @@ const NavBarCom = () => {
               <a
                 className="insta"
                 target="_blank"
-                href="https://www.instagram.com/frameboxx2.0"
+                href="https://www.instagram.com/"
                 title="Follow us on Instagram"
               >
                 <i className="fa fa-instagram" />
@@ -183,7 +183,7 @@ const NavBarCom = () => {
               <a
                 className="insta"
                 target="_blank"
-                href="https://www.artstation.com/frameboxx"
+                href="https://www.artstation.com/"
                 title="Follow us on Art Station"
               >
                 <img src="/img/art-station-w.png" />
@@ -220,9 +220,9 @@ const NavBarCom = () => {
               className="justify-content-center"
             >
               <Nav>
-                {/* <Link to="/" onClick={handleNavbarCollapse} className="nav-link"> 
+                <Link to="/" onClick={handleNavbarCollapse} className="nav-link"> 
                   Home
-                </Link> */}
+                </Link>
                 <Link to="/About" onClick={handleNavbarCollapse} className="nav-link">
                   About Us
                 </Link>
@@ -290,10 +290,7 @@ const NavBarCom = () => {
               </button>
             
             
-            <div className="form-inline my-2 my-lg-0">
-              {/* <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-                              <a class=" my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true" style="font-size:20px; margin-left:10px"></i></a>*/}
-            </div>
+          
          
                 <Link to="/Contact" onClick={handleNavbarCollapse} className="nav-link">
                   Contact Us
