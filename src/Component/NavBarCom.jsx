@@ -302,7 +302,7 @@ const NavBarCom = () => {
               </Nav>
              
             </Navbar.Collapse>
-            <div>
+            <div className="d-lg-block d-none">
             <a href="#enquire" className="btn btn-light scrollto2">
               Apply Now
             </a>
