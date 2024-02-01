@@ -9,7 +9,6 @@ import fashion from "../Images/1200 x 794 (1).jpg";
 import interior from "../Images/1200 x 794.jpg";
 import campus from "../Images/Carousel and backgrounds -20240115T070201Z-001/Campus.jpg"
 // import MyBackgroundImage from "../Images/16.jpg";
-
 // ----------student work------------------------
 
 import w1 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.45 PM (1).jpeg";
