@@ -226,9 +226,7 @@ const NavBarCom = () => {
                 <Link to="/About" onClick={handleNavbarCollapse} className="nav-link">
                   About Us
                 </Link>
-                <Link to="/Studentswork" onClick={handleNavbarCollapse} className="nav-link">
-                  Life At Designboxx
-                </Link>
+               
                 {/* <Link to="/Gallery" onClick={handleNavbarCollapse}>
                   Gallery
                 </Link> */}
@@ -290,7 +288,9 @@ const NavBarCom = () => {
               </button>
             
             
-          
+              <Link to="/Studentswork" onClick={handleNavbarCollapse} className="nav-link">
+                  Life At Designboxx
+                </Link>
          
                 <Link to="/Contact" onClick={handleNavbarCollapse} className="nav-link">
                   Contact Us

@@ -42,6 +42,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Sajid Momin",
     Desig:"Senior Faculty, Fashion Designing ",
+    Slugs:"/fashion-design",
   },
   {
     id: 12,
@@ -54,6 +55,7 @@ const GalleryData = [
     Desc:"This program typically covers a variety of subjects related to interior design, providing you with both theoretical knowledge and practical skills. ",
    Tname:"Rajesh",
     CImage:interior,
+    Slugs:"/interior-design",
   },
   
   {
@@ -70,6 +72,7 @@ const GalleryData = [
    Cap:cert,
     Tname:"Gayatri Barshi",
     Desig:"Senior Faculty, Fashion Designing ",
+    Slugs:"/contact",
   },
   {
     id: 2,
@@ -85,6 +88,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Gayatri Barshi",
     Desig:"Senior Faculty, Fashion Designing ",
+    Slugs:"/contact",
   },
   {
     id: 3,
@@ -99,6 +103,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Mehwash Shaikh",
     Desig:"Senior Faculty, Fashion Designing ",
+    Slugs:"/contact",
   },
   {
     id: 4,
@@ -115,6 +120,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Khushi Kothari",
     Desig:"Faculty, Fashion Designing ",
+    Slugs:"/contact",
   },
   
   
@@ -129,6 +135,7 @@ const GalleryData = [
    Cap:cert,
     Desc:"These courses concentrate on furniture selection, arrangement, and creating functional yet aesthetically pleasing spaces",
     CImage:furniture,
+    Slugs:"/contact",
   },
   {
     id: 6,
@@ -142,6 +149,7 @@ const GalleryData = [
     Desc:"Learning AutoCAD software that is beneficial for interior designers. This is a Short course focusing on these programs' basics or specific functionalities.",
    
     CImage:cad,
+    Slugs:"/contact",
   },
   {
     id: 7,
@@ -153,6 +161,7 @@ const GalleryData = [
    Cap:cert,
     Desc:"Eco-friendly design practices and materials",
     CImage:sustain,
+    Slugs:"/contact",
   },
   {
     id: 8,
@@ -165,6 +174,7 @@ const GalleryData = [
     Desc:"Understanding lighting techniques, fixtures, and how lighting impacts the overall ambiance of a space",
   
     CImage:light,
+    Slugs:"/contact",
   },
   {
     id: 9,
@@ -177,6 +187,7 @@ const GalleryData = [
     Desc:"Focus on specific spaces like kitchens, bathrooms, or living rooms, delving into the specialized considerations for each area",
   
     CImage:spec,
+    Slugs:"/contact",
   },
   {
     id: 10,
@@ -189,6 +200,7 @@ const GalleryData = [
     Desc:"Vastu Shastra is an ancient Indian science that harmonizes spaces with natural forces, aiming to enhance well-being and balance in life.",
   
     CImage:vastu,
+    Slugs:"/contact",
   },
  
   

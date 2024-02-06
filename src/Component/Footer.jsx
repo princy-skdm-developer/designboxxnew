@@ -84,8 +84,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-md-4">
+        <h4 style={{color:"crimson", fontWeight:"600"}}>Address</h4>
           <div className="f-item address">
-            <h4>Address</h4>
+            
             <ul>
               <li>
                 <i className="fa fa-envelope" />

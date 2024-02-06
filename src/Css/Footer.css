@@ -5,17 +5,23 @@ footer{
     background:#eee;
 }
 footer  .item {
-    padding-right: 30px;
+    padding-right: 10px;
     
   }
   
   footer  .item:last-child {
     padding-right: 15px;
+
   }
   
   .f-item {
    
     overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
   }
   
   footer p {
@@ -118,7 +124,9 @@ footer  .item {
     background: #ffb606 none repeat scroll 0 0;
     color: #ffffff;
   }
-  
+  footer .f-item .address h4{
+    text-align:left !important;
+  }
   footer .f-item.address i, 
   footer .f-item.address p {
     display: table-cell;
@@ -130,7 +138,7 @@ footer  .item {
     border: 1px solid rgba(255, 255, 255, 0.1);
     color:var(---primeColor);
     height: 40px;
-    text-align: center;
+    /* text-align: center; */
     width: 40px;
     font-size: 20px;
   }

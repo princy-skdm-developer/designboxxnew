@@ -1,6 +1,8 @@
 import React from "react";
 import "../Css/Work.css";
+import {Link} from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/bundle";
 // import 'swiper/css/grid';
@@ -8,6 +10,7 @@ import "swiper/css/navigation";
 
 // import { Navigation } from "swiper";
 import { Grid, Pagination } from 'swiper';
+import GalleryData from "../Component/GalleryData";
 const Work = ({ data }) => {
   
   return (
@@ -55,12 +58,13 @@ const Work = ({ data }) => {
                   className="mySwiper1"
                 > {
                     data.map((value) => {
-                        const { id, CImage, CategoryName,Cap,Duration,Ctitle,Desc,Icon,Earn } = value
+                        const { Slugs, CImage, CategoryName,Cap,Duration,Ctitle,Desc,Icon,Earn } = value
 
                         return (
                             <>
                <SwiperSlide>
-                     
+            
+               <Link to={`${Slugs}`}>
                       <div className="card" >
                         
                 <img src={CImage} className="card-img-top" alt="" />
@@ -69,10 +73,13 @@ const Work = ({ data }) => {
                 </div>
                 <div className="card-body">
                   <div>
-                  <h5 className="card-title"><img src={Icon} style={{width:20, height:20,marginRight:5}}></img>{CategoryName} <span>{Ctitle}</span></h5>
+                  <h5 className="card-title">
+                    <img src={Icon} style={{width:20, height:20,marginRight:5}}></img> 
+                    {CategoryName} <span>{Ctitle}</span></h5>
                   </div>
                
-                  <p className="card-text" style={{color:"blue"}}><img src={Cap} style={{width:15, height:15,marginRight:5}}></img>{Earn}</p>
+                  <p className="card-text" style={{color:"blue"}}>
+                    <img src={Cap} style={{width:15, height:15,marginRight:5}}></img>{Earn}</p>
                   <p className="card-text" style={{fontSize:"13"}}>{Duration}</p>
                   
                 </div>
@@ -81,6 +88,8 @@ const Work = ({ data }) => {
                           <img src={CImage} className="" alt="" />
                         </div> */}
                       </div>
+                      
+                      </Link>
                    </SwiperSlide>
                    
              
