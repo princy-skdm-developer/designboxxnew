@@ -33,7 +33,7 @@ const Studentswork = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Students Work</h1>
+              <h1>Life At Designboxx</h1>
               {/* <ul className="breadcrumb">
           <li>
             <a href="#">
