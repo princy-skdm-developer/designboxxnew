@@ -40,7 +40,7 @@
 .overlay p {
     color:#fff;
     padding:20px 15px;
-    text-align:left !important;
+    text-align:center !important;
 }
 .card:hover .Card-text h2 {
     display: block;

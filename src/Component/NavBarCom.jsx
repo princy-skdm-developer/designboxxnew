@@ -180,14 +180,7 @@ const NavBarCom = () => {
               >
                 <i className="fa fa-instagram" />
               </a>
-              <a
-                className="insta"
-                target="_blank"
-                href="https://www.artstation.com/"
-                title="Follow us on Art Station"
-              >
-                <img src="/img/art-station-w.png" />
-              </a>
+             
             </span>
           </div>
         </div>
@@ -300,9 +293,9 @@ const NavBarCom = () => {
              
             </Navbar.Collapse>
             <div className="d-lg-block d-none">
-            <a href="#enquire" className="btn btn-light scrollto2">
+            <Link to="/Contact" className="btn btn-light scrollto2">
               Apply Now
-            </a>
+            </Link>
             </div>
           </Container>
         </Navbar>

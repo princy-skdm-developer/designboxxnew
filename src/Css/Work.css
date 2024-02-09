@@ -6,11 +6,11 @@
 .work-gallery .col a.item img {
     border-radius: 0;
 }
-.card-body span{
+/* .card-body span{
     font-size:.9rem;
-    font-weight:500;
+    font-weight:600;
     color:#000;
-}
+} */
 
  .imgwrap {
     overflow: hidden;

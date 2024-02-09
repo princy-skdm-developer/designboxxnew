@@ -490,25 +490,10 @@ const Home = () => {
               </div>
         <div className="row">
           <div className="col-md-12 portfolio-content">
-          {/* <div className="site-heading text-center">
-                <h2>Our Alumnis</h2>
-                <br></br>
-              </div> */}
+         
           <Tabs filterCategory={filterCategory} tabsData={tabsData} />
                                 <Work data={data} />
-            {/* <div className="mix-item-menu active-theme">
-              <button className="active" data-filter="*">
-                All
-              </button>
-              <button data-filter=".campus" className="">
-                Campus
-              </button>
-              <button data-filter=".teachers">Teachers</button>
-              <button data-filter=".education">Education</button>
-              <button data-filter=".ceremony">Ceremony</button>
-              <button data-filter=".students">Students</button>
-            </div> */}
-            {/* End Mixitup Nav*/}
+           
            
           </div>
         </div>
@@ -516,54 +501,7 @@ const Home = () => {
     </div>
   </div>
 
-      {/* <div
-        id="top-categories"
-        className="top-cat-area default-padding bottom-less"
-      >
-        <div className="container">
-          <div className="row">
-           
-            <div className="col-12">
-              <h2>Our Courses</h2>
-              <p>
-                Discourse assurance estimable applauded to so. Him everything
-                melancholy uncommonly but solicitude inhabiting projection off.
-                Connection stimulated estimating excellence an to impression.
-              </p>
-            </div>
-          </div>
-       
-          <div className="row mt-lg-5">
-            <div className="col-lg-3">
-              <div className="card">
-                <img src={c1} className="card-img-top" alt="" />
-                <div className="card-body">
-                  <h5 className="card-title">Degree Course</h5>
-                  <p className="card-text">BSc Fashion Designing</p>
-                  <p>BSc Interior Designing </p>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3">
-              <div className="card">
-                <img
-                  src={c2}
-                  className="card-img-top"
-                  alt="Women Empowernment"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Diploma/Certification Course</h5>
-                  <p className="card-text"></p>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+      
       <section className="bookingSection mt-lg-5 mt-2 default-padding" id=" ">
         <div className="container">
         <div className="video-area">
@@ -694,253 +632,15 @@ const Home = () => {
     
 
 
-                {/* <ul>
-                  <li>
-                    <i class="fa fa-check"></i>
-                    <span>
-                      Affiliation With Well Known Universities to Provide
-                      Fashion design & Interior design Degree Course
-                    </span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>Education Loan Facility Available For Students</span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>
-                      Spearheaded By Entrepreneurs With 3 Decades Of Expertise
-                    </span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>
-                      Lectures And Guest Sessions From Industry Experts Regular
-                      Workshops, Seminars And Competitions
-                    </span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>
-                      Project And Portfolio Creation Collaborative Learning
-                      Approach
-                    </span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>
-                      Personalized Attention To Students Unlimited Practice
-                      Hours Regular Studio Visits
-                    </span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>Studio Internship</span>
-                  </li>
-                  <li>
-                    <i className="fa fa-check" />
-                    <span>100% Placement Assistance</span>
-                  </li>
-                </ul> */}
-         
-              {/* <a
-                    href="#"
-                    className="btn btn-theme effect btn-md"
-                    data-animation="animated slideInUp"
-                  >
-                    Enroll Now
-                  </a> */}
-              {/* <div className="bottom-info align-left">
-                    <div className="item">
-                      <h4>Author</h4>
-                     
-                    </div>
-                    <div className="item">
-                      <h4>Students enrolled</h4>
-                      <span>5455</span>
-                    </div>
-                    <div className="item">
-                      <h4>Rating</h4>
-                      <span className="rating">
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star" />
-                        <i className="fa fa-star-half-alt" />
-                      </span>
-                    </div>
-                  </div> */}
+               
             </div>
 
-            {/* <div className="col-md-5 m-0 p-0">
-              <div className="thumb">
-                <img src={feature} alt="Thumb" />
-              
-              </div>
-            </div> */}
-            {/* <div className="aboutText m-0 ">
-        <h2> We're here for Computer Sales, Service, Repair &amp; Rental.</h2>
-        <p> We are pro when it comes to fixing computers.</p>
-        <a href="https://wa.me/9920177777">
-          {" "}
-          <button className="viewBtn " type="button ">
-            <i className="fa fa-whatsapp " />
-            Whatsapp
-          </button>
-        </a>
-      </div> */}
       
     
       </section>
 
       {/* ------------------------------------------why design box ------------------ */}
-      {/* <div
-        id="featured-courses"
-        className="featured-courses-area left-details default-padding"
-      >
-        <div className="container">
-          <div className="row">
-           
-            <div className="col-md-7 info">
-              <h2>Why Designbox</h2>
-
-              <ul>
-                <li>
-                  <i class="fa fa-check"></i>
-                  <span>
-                    Affiliation With Well Known Universities to Provide Fashion
-                    design & Interior design Degree Course
-                  </span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>Education Loan Facility Available For Students</span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>
-                    Spearheaded By Entrepreneurs With 3 Decades Of Expertise
-                  </span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>
-                    Lectures And Guest Sessions From Industry Experts Regular
-                    Workshops, Seminars And Competitions
-                  </span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>
-                    Project And Portfolio Creation Collaborative Learning
-                    Approach
-                  </span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>
-                    Personalized Attention To Students Unlimited Practice Hours
-                    Regular Studio Visits
-                  </span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>Studio Internship</span>
-                </li>
-                <li>
-                  <i className="fa fa-check" />
-                  <span>100% Placement Assistance</span>
-                </li>
-              </ul>
-            
-            </div>
-
-            <div className="col-md-5">
-              <div className="thumb">
-                <img src={feature} alt="Thumb" />
-                <div className="live-view">
-                  <a
-                    href="assets/img/courses/f1.jpg"
-                    className="item popup-link"
-                  >
-                    <i className="fa fa-camera" />
-                  </a>
-                  <a
-                    className="popup-youtube"
-                    href="https://www.youtube.com/watch?v=vQqZIFCab9o"
-                  >
-                    <i className="fa fa-video" />
-                  </a>
-                </div>
-              </div>
-            </div>
-         
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div
-  className="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard"
-  style={{ backgroundImage: `url(${fun})` }}
->
-  <div className="container">
-    <div className="row">
-      <div className="col-md-3 col-sm-6 item">
-        <div className="fun-fact">
-          <div className="icon">
-            <i className="fa fa-trophy" />
-          </div>
-          <div className="info">
-            <span className="timer" data-to={212} data-speed={5000}>
-              212
-            </span>
-            <span className="medium">National Awards</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3 col-sm-6 item">
-        <div className="fun-fact">
-          <div className="icon">
-            <i className="fa fa-desktop" />
-          </div>
-          <div className="info">
-            <span className="timer" data-to={128} data-speed={5000}>
-              128
-            </span>
-            <span className="medium">Best Teachers</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3 col-sm-6 item">
-        <div className="fun-fact">
-          <div className="icon">
-            <i className="fa fa-user" />
-          </div>
-          <div className="info">
-            <span className="timer" data-to={8970} data-speed={5000}>
-              8970
-            </span>
-            <span className="medium">Students Enrolled</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-md-3 col-sm-6 item">
-        <div className="fun-fact">
-          <div className="icon">
-            <i className="fa fa-book" />
-          </div>
-          <div className="info">
-            <span className="timer" data-to={640} data-speed={5000}>
-              640
-            </span>
-            <span className="medium">Cources</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> */}
-
+    
       <section
         
         className="advisor-area  carousel-shadow default-padding bottom-less"
@@ -1204,83 +904,7 @@ const Home = () => {
                   </SwiperSlide>
                 </Swiper>
 
-                {/* <div className="owl-stage-outer">
-            <div
-              className="owl-stage"
-              style={{
-                transform: "translate3d(-970px, 0px, 0px)",
-                transition: "all 0s ease 0s",
-                width: 1940
-              }}
-            >
-              <div className="owl-item" style={{ width: 455, marginRight: 30 }}>
                
-              </div>
-              <div className="owl-item" style={{ width: 455, marginRight: 30 }}>
-                <div className="item">
-                  <div className="col-md-5 thumb">
-                    <img src="assets/img/team/3.jpg" alt="Thumb" />
-                  </div>
-                  <div className="col-md-7 info">
-                    <p>
-                      Procuring continued suspicion its ten. Pursuit brother are
-                      had fifteen distant has. Early had add equal china quiet
-                      visit. Appear an manner as no limits either praise..
-                    </p>
-                    <h4>Astron Brun</h4>
-                    <span>Science Student</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="owl-item active"
-                style={{ width: 455, marginRight: 30 }}
-              >
-                <div className="item">
-                  <div className="col-md-5 thumb">
-                    <img src="assets/img/team/4.jpg" alt="Thumb" />
-                  </div>
-                  <div className="col-md-7 info">
-                    <p>
-                      Procuring continued suspicion its ten. Pursuit brother are
-                      had fifteen distant has. Early had add equal china quiet
-                      visit. Appear an manner as no limits either praise..
-                    </p>
-                    <h4>Paol Druva</h4>
-                    <span>Development Student</span>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="owl-item active"
-                style={{ width: 455, marginRight: 30 }}
-              >
-                <div className="item">
-                  <div className="col-md-5 thumb">
-                    <img src="assets/img/team/7.jpg" alt="Thumb" />
-                  </div>
-                  <div className="col-md-7 info">
-                    <p>
-                      Procuring continued suspicion its ten. Pursuit brother are
-                      had fifteen distant has. Early had add equal china quiet
-                      visit. Appear an manner as no limits either praise..
-                    </p>
-                    <h4>Druna Patia</h4>
-                    <span>Biology Student</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="owl-nav">
-            <div className="owl-prev">
-              <i className="fa fa-angle-left" />
-            </div>
-            <div className="owl-next disabled">
-              <i className="fa fa-angle-right" />
-            </div>
-          </div>
-          <div className="owl-dots disabled" /> */}
               </div>
             </div>
           </div>

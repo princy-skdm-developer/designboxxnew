@@ -91,7 +91,7 @@ const Footer = () => {
               <li>
                 <i className="fa fa-envelope" />
                 <p>
-                  Email{" "}
+                  {/* Email{" "} */}
                   <span>
                     <a href="mailto:support@validtheme.com">
                     Info@designboxx.in
@@ -105,8 +105,8 @@ const Footer = () => {
                  
 
 
-                Jhunjhunuwala College, Station Road, Ghatkopar West,<br/>
-MUMBAI - 400086 (Opposite Ghatkopar Railway Station)
+                1st floor,Suchita & Orange Business Suite,Hirachand Desai Municipal Market, Ghatkopar West Mumbai -400086<br/>
+
                 </p>
               </li>
             </ul>

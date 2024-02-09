@@ -18,7 +18,7 @@ import corel from "../Images/icons/design-in-corel-draw.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import FoundData from "../Component/FoundData";
+
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import CourseDescFashion from "../Component/CourseDescFashion";
 const Courses = () => {

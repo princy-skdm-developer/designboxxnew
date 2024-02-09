@@ -84,10 +84,7 @@ const About = () => {
       <div className="about-area1  default-padding">
         <div className="container">
           <div className="row">
-            {/* <div
-              className="col-md-6 thumb bg-cover"
-              style={{ backgroundImage: `url(${aboutPic})` }}
-            /> */}
+           
             <div className="col-md-12 info">
             <div className="portfolio-items-area">
         <h2>About Designboxx</h2>
@@ -320,18 +317,7 @@ Learning the latest trends in these industries will help you in building a lucra
             </div>
             <div className="col-md-3 col-0"></div>
           </div>
-          {/* <div className="row">
-            <div className="video-info">
-              <div className="overlay-video">
-                <a
-                  className="popup-youtube video-play-button"
-                  href="https://www.youtube.com/watch?v=8GQTt50izkg"
-                >
-                  <i className="fa fa-play" />
-                </a>
-              </div>
-            </div>
-          </div> */}
+        
         </div>
       </div>
 

@@ -67,9 +67,7 @@ const Courses2 = () => {
                       </ol>
                     </nav>
                     <h2>{CourseDesc.ServiceName}</h2>
-                    
                   </div>
-                
                 </div>
               </div>
             </div>
@@ -152,162 +150,142 @@ const Courses2 = () => {
                                 className="collapse  show "
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
-                              >  <div className="line-heading">
-                              <h2>First Semester</h2>
-                            </div> 
+                              >
+                                {" "}
+                                <div className="line-heading">
+                                  <h2>First Semester</h2>
+                                </div>
                                 <div className="row">
                                   <div className="col-md-4 col-12">
-                                  <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course1.Graphics.map(
-                                      (donationValue) => (
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                      </thead>
+                                      <tbody>
+                                        {Course1.Graphics.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
                                   </div>
                                   <div className="col-md-4 col-12">
-                                  <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course1.Furniture.map(
-                                      (donationValue) => (
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                      </thead>
+                                      <tbody>
+                                        {Course1.Furniture.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
                                   </div>
                                   <div className="col-md-4 col-12">
-                                  <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course1.Construct.map(
-                                      (donationValue) => (
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                      </thead>
+                                      <tbody>
+                                        {Course1.Construct.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
                                   </div>
                                 </div>
-                               
-                               
                                 {/* -------------sem2---------- */}
                                 <div className="line-heading">
-                                            <h2>Second Semester</h2>
-                                          </div>
-                               <div className="row">
-                                <div className="col-md-6 col-12">
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course1.Design.map(
-                                      (donationValue) => (
-                                        <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
-                                        </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                  <h2>Second Semester</h2>
                                 </div>
-                                <div className="col-md-6 col-12">
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course1.History.map(
-                                      (donationValue) => (
+                                <div className="row">
+                                  <div className="col-md-6 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                      </thead>
+                                      <tbody>
+                                        {Course1.Design.map((donationValue) => (
+                                          <tr>
+                                            <td class="meals">
+                                              <p>{donationValue.Sno}</p>
+                                            </td>
+
+                                            <td class="Donate-amount">
+                                              <p>{donationValue.CName1}</p>
+                                            </td>
+                                          </tr>
+                                        ))}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+                                  <div className="col-md-6 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
+                                        <tr>
+                                          <th>S.No.</th>
+                                          <th>Course</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        {Course1.History.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
+                                  </div>
                                 </div>
-                               </div>
-                               
-                                
-                               
                               </div>
                               {/* <div className="row row-1">
   <div className="col"> */}
@@ -318,10 +296,7 @@ const Courses2 = () => {
                         {/* -------------------Accordion2------------------*/}
                         <div className="">
                           <Accordion.Item eventKey="1">
-                            <Accordion.Header>
-                              {" "}
-                              Second Year 
-                            </Accordion.Header>
+                            <Accordion.Header> 2nd Year</Accordion.Header>
 
                             <AccordionBody>
                               <div
@@ -330,167 +305,145 @@ const Courses2 = () => {
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
                               >
-                                 <div className="line-heading">
-                                            <h2>First Semester</h2>
-                                          </div>
-                                          <div className="row">
-                                            <div className="col-md-6 col-12">
-                                            <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.Graphics.map(
-                                      (donationValue) => (
+                                <div className="line-heading">
+                                  <h2>First Semester</h2>
+                                </div>
+                                <div className="row">
+                                  <div className=" col-md-4 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                            </div>
-                                           
-                                              <div className="col-md-6 col-12">
-                                              <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
+                                      </thead>
+                                      <tbody>
+                                        {Course2.Graphics.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
 
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.Construct.map(
-                                      (donationValue) => (
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+
+                                  <div className=" col-md-8 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                              </div>
-                                          </div>
-                          
-                              
+                                      </thead>
+                                      <tbody>
+                                        {Course2.Construct.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+                                </div>
+
                                 {/* -------------sem2---------- */}
                                 <div className="line-heading">
-                                            <h2>Second Semester</h2>
-                                          </div>
-                               
+                                  <h2>Second Semester</h2>
+                                </div>
+
                                 <div className="row">
-                             
-                                            <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.Design.map(
-                                      (donationValue) => (
+                                  <div className="col-lg-4 col-md-6 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                            
-                                            
-                                            <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
+                                      </thead>
+                                      <tbody>
+                                        {Course2.Design.map((donationValue) => (
+                                          <tr>
+                                            <td class="meals">
+                                              <p>{donationValue.Sno}</p>
+                                            </td>
 
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.Furniture.map(
-                                      (donationValue) => (
+                                            <td class="Donate-amount">
+                                              <p>{donationValue.CName1}</p>
+                                            </td>
+                                          </tr>
+                                        ))}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+
+                                  <div className="col-lg-4 col-md-6 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                           
-                                  
-                                            
-                                            
-                                              
-                                              <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
+                                      </thead>
+                                      <tbody>
+                                        {Course2.Furniture.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
 
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course2.History.map(
-                                      (donationValue) => (
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+
+                                  <div className="col-lg-4 col-md-6 col-12">
+                                    <Table striped bordered hover>
+                                      <thead>
                                         <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
+                                          <th>S.No.</th>
+                                          <th>Course</th>
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                              
-                                             
-                                              </div>
-                               
-                                
+                                      </thead>
+                                      <tbody>
+                                        {Course2.History.map(
+                                          (donationValue) => (
+                                            <tr>
+                                              <td class="meals">
+                                                <p>{donationValue.Sno}</p>
+                                              </td>
+
+                                              <td class="Donate-amount">
+                                                <p>{donationValue.CName1}</p>
+                                              </td>
+                                            </tr>
+                                          )
+                                        )}
+                                      </tbody>
+                                    </Table>
+                                  </div>
+                                </div>
                               </div>
                             </AccordionBody>
                           </Accordion.Item>
@@ -500,7 +453,7 @@ const Courses2 = () => {
                           <Accordion.Item eventKey="2">
                             <Accordion.Header>
                               {" "}
-                              Third Year{" "}
+                              3rd Year{" "}
                               {/* <span>3 Softwares | 9 Artistic Skills</span> */}
                             </Accordion.Header>
 
@@ -511,22 +464,20 @@ const Courses2 = () => {
                                 aria-labelledby="heading117"
                                 data-parent="#accordionExample266"
                               >
-                               <div className="line-heading">
-                                            <h2>First Semester</h2>
-                                          </div>
-                            
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course3.Graphics.map(
-                                      (donationValue) => (
+                                <div className="line-heading">
+                                  <h2>First Semester</h2>
+                                </div>
+                                <div className="row">
+                                <div className="col-lg-6 col-md-6 col-12">
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>S.No.</th>
+                                        <th>Course</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Course3.Graphics.map((donationValue) => (
                                         <tr>
                                           <td class="meals">
                                             <p>{donationValue.Sno}</p>
@@ -535,55 +486,55 @@ const Courses2 = () => {
                                           <td class="Donate-amount">
                                             <p>{donationValue.CName1}</p>
                                           </td>
-                                         
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
+                                      ))}
+                                    </tbody>
+                                  </Table>
+                                </div>
+                                <div className="col-lg-6 col-md-6 col-12">
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>S.No.</th>
+                                        <th>Course</th>
 
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course3.Furniture.map(
-                                      (donationValue) => (
-                                        <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
+                                        {/* */}
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Course3.Construct.map(
+                                        (donationValue) => (
+                                          <tr>
+                                            <td class="meals">
+                                              <p>{donationValue.Sno}</p>
+                                            </td>
 
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
-                                        </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                            <td class="Donate-amount">
+                                              <p>{donationValue.CName1}</p>
+                                            </td>
+                                          </tr>
+                                        )
+                                      )}
+                                    </tbody>
+                                  </Table>
+                                </div>
+                               
+
                                 {/* -------------sem2---------- */}
                                 <div className="line-heading">
-                                            <h2>Second Semester</h2>
-                                          </div>
+                                  <h2>Second Semester</h2>
+                                </div>
                                
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                      {/* */}
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course3.Construct.map(
-                                      (donationValue) => (
+                                <div className="col-lg-4 col-md-6 col-12">
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>S.No.</th>
+                                        <th>Course</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Course3.Design.map((donationValue) => (
                                         <tr>
                                           <td class="meals">
                                             <p>{donationValue.Sno}</p>
@@ -592,24 +543,47 @@ const Courses2 = () => {
                                           <td class="Donate-amount">
                                             <p>{donationValue.CName1}</p>
                                           </td>
-                                        
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
+                                      ))}
+                                    </tbody>
+                                  </Table>
+                                </div>
+                                <div className="col-lg-4 col-md-6 col-12">
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>S.No.</th>
+                                        <th>Course</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Course3.Furniture.map(
+                                        (donationValue) => (
+                                          <tr>
+                                            <td class="meals">
+                                              <p>{donationValue.Sno}</p>
+                                            </td>
 
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course3.Design.map(
-                                      (donationValue) => (
+                                            <td class="Donate-amount">
+                                              <p>{donationValue.CName1}</p>
+                                            </td>
+                                          </tr>
+                                        )
+                                      )}
+                                    </tbody>
+                                  </Table>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6 col-12">
+                                  <Table striped bordered hover>
+                                    <thead>
+                                      <tr>
+                                        <th>S.No.</th>
+                                        <th>Course</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {Course3.History.map((donationValue) => (
                                         <tr>
                                           <td class="meals">
                                             <p>{donationValue.Sno}</p>
@@ -618,40 +592,13 @@ const Courses2 = () => {
                                           <td class="Donate-amount">
                                             <p>{donationValue.CName1}</p>
                                           </td>
-                                         
                                         </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
-                                <Table striped bordered hover>
-                                  <thead>
-                                    <tr>
-                                      <th>S.No.</th>
-                                      <th>Course</th>
-
-                                     
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {Course3.History.map(
-                                      (donationValue) => (
-                                        <tr>
-                                          <td class="meals">
-                                            <p>{donationValue.Sno}</p>
-                                          </td>
-
-                                          <td class="Donate-amount">
-                                            <p>{donationValue.CName1}</p>
-                                          </td>
-                                         
-                                        </tr>
-                                      )
-                                    )}
-                                  </tbody>
-                                </Table>
+                                      ))}
+                                    </tbody>
+                                  </Table>
+                                </div>
                               </div>
-                             
+                              </div>
                             </AccordionBody>
                           </Accordion.Item>
                         </div>
@@ -666,12 +613,7 @@ const Courses2 = () => {
                       <div className="table-responsive mt-lg-5 mt-2 row">
                         <div className="table-list-software col-md-4">
                           <div className="">
-                            <img
-                              alt=""
-                              height={30}
-                              src={illus}
-                              width={30}
-                            />
+                            <img alt="" height={30} src={illus} width={30} />
                           </div>
                           <div>
                             <strong>Adobe Illustrator</strong>
@@ -680,12 +622,7 @@ const Courses2 = () => {
                           </div>
                         </div>
                         <div className="table-list-software col-md-4">
-                          <img
-                            alt=""
-                            height={30}
-                            src={photoshop}
-                            width={30}
-                          />
+                          <img alt="" height={30} src={photoshop} width={30} />
                           <div>
                             <strong>Photoshop</strong>
                             <br />
@@ -693,12 +630,7 @@ const Courses2 = () => {
                           </div>
                         </div>
                         <div className="table-list-software col-md-4">
-                          <img
-                            alt=""
-                            height={30}
-                            src={cad}
-                            width={30}
-                          />
+                          <img alt="" height={30} src={cad} width={30} />
                           <div>
                             <strong>CAD(Computer Aided Designing)</strong>
                             <br />

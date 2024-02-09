@@ -130,7 +130,7 @@ footer  .item {
   footer .f-item.address i, 
   footer .f-item.address p {
     display: table-cell;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     text-align:left;
   }
   
@@ -590,6 +590,7 @@ footer  .item {
     margin: 0;
     text-transform: capitalize;
     line-height: 40px;
+    text-align: center;
   }
   
   footer .footer-bottom.bg-light p {
@@ -599,4 +600,5 @@ footer  .item {
   
  .f-item p{
   color:#000;
+  text-align: center;
  }

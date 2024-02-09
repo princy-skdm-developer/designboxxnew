@@ -7,7 +7,7 @@ const CourseDescInterior = [
     Duration:"36 Months",
     Eligibility:"10th Grade",
     ServicePara1:
-    "A billion-dollar smile is one’s biggest asset. A smile can create lasting impressions on others and enhance your personality. People with beautiful smiles are more confident souls. ",  
+    "This one is the premier degree program of Interior Designing. During the program, you will develop an in-depth understanding of the tools and techniques which are used in Interior Designing. You will be interacting with our Subject Matter Experts, who have worked on projects that have been acclaimed both nationally and internationally.",  
             Slugs:"/interior-design",
     ServicePara2:
     " Ask yourself these questions “Do I have a perfect smile?” “Do I have a selfie-friendly smile?” “Does my smile get me compliments galore?.If yes, you are blessed with nature’s best gift. But if you are among those who shy to smile owing to misaligned, crooked, protruding, disjointed, irregular, gapped, stained and discolored teeth, you need to consider a smile makeover and bring back the confidence in your life.",      

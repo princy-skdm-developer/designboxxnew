@@ -14,10 +14,12 @@
     padding: 50px 30px;
     text-align: center;
     background: #ffffff none repeat scroll 0 0;
+    height:300px;
+    max-height:100%;
   }
   
   .contact-info-area .item i {
-    color:var(---primeColor);
+    color:crimson;
     display: block;
     font-size: 50px;
     text-align: center;
@@ -85,7 +87,7 @@
   }
   
   .contact-info-area  button {
-    background:var(---primeColor) none repeat scroll 0 0;
+    background:crimson none repeat scroll 0 0;
     border: medium none;
     color: #ffffff;
     font-family: "Poppins",sans-serif;
