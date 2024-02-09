@@ -41,7 +41,7 @@ footer  .item {
   footer .f-item > h4,
   footer .f-item > h5 {
     font-weight: 600;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     position: relative;
     text-transform: uppercase;
     z-index: 1;
@@ -165,10 +165,10 @@ footer  .item {
     display: block;
     text-transform: lowercase;
   }
-  
+/*   
   footer .f-item.address li {
     margin-bottom: 15px;
-  }
+  } */
   
   footer .f-item.address li:last-child {
     margin: 0;
