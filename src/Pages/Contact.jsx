@@ -1,8 +1,95 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Css/Contact.css';
 import MyBackgroundImage from "../Images/contactBanner.jpg";
 import Footer from "../Component/Footer";
+import $ from 'jquery';
 const Contact = () => {
+  const [errors, setErrors] = useState({
+    custName: "",
+    custEmail: "",
+    custContact: "",
+    custMessage: "",
+  });
+
+  const handleValidation = () => {
+    let isValid = true;
+    const newErrors = {
+      custName: "",
+      custEmail: "",
+      custContact: "",
+      custMessage: "",
+    };
+    if (!custName.trim()) {
+      isValid = false;
+      newErrors.custName = "Name is required";
+    }
+
+    const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    if (!custEmail.match(emailRegex)) {
+      isValid = false;
+      newErrors.custEmail = "Email is not valid";
+    }
+
+    if (!custContact.trim()) {
+      isValid = false;
+      newErrors.custContact = "Phone is required";
+    } else if (!/^\d{10}$/.test(custContact)) {
+      isValid = false;
+      newErrors.custContact = "Phone must have 10 digits";
+    }
+
+    if (!custMessage.trim()) {
+      isValid = false;
+      newErrors.custMessage = "Write a Message";
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+  // ============ Mail function ==========
+  const [custName, setCustName] = useState("");
+  const [custEmail, setCustEmail] = useState("");
+  const [custContact, setCustContact] = useState("");
+  const [custMessage, setCustMessage] = useState("");
+  // ============== Mail Print ======
+  const ServForm = (e) => {
+    e.preventDefault();
+    if (handleValidation()) {
+      var body =
+        '<!DOCTYPE html><html><head><title>Enquiry Lead</title></head><body><div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background-color:#f2f2f2;padding:20px"><h2 style="color:#6e3b70">Designboxx </h2><p>Hare Krishna,</p><p>Thank you for your interest in our services.</p><p>Please check your enquiry which generated from website:</p><table cellpadding="5" style="margin:0"><tr><td style="text-align:left"><strong>Name:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custName +
+        '</td></tr><tr><td style="text-align:left"><strong>Email:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custEmail +
+        '</td></tr><tr><td style="text-align:left"><strong>Phone:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custContact +
+        '</td></tr><tr><td style="text-align:left"><strong>Total People:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custMessage +
+        '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
+      $.post(
+        "https://skdm.in/server/v1/send_lead_mail.php",
+        {
+          toEmail: "princygrwl4@gmail.com",
+          fromEmail: "skdmlead@gmail.com",
+          bccMail: "skdmlead@gmail.com",
+          mailSubject: "New Customer Lead",
+          mailBody: body,
+          accountName: "katha",
+          accountLeadSource: "",
+          accountLeadName: custName,
+          // accountLeadEmail: custEmail,
+        },
+        function (dataa, status) {
+          console.log("data :" + dataa);
+          console.log("name:" + custName);
+          console.log("name:" + custEmail);
+        }
+      );
+
+      alert("Your Form has Submitted Our team will contact with You  soon.");
+      e.preventDefault();
+      return false;
+    }
+  };
   return (
     <div>
 
@@ -92,31 +179,33 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                 </div>
                 <form action="#">
                   <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <div className="form-group">
                         <input
                           className="form-control"
                           placeholder="First Name"
                           type="text"
+                          value={custName}
+                          onChange={(e) => setCustName(e.target.value)}
                         />
+                           {errors.custName && (
+                        <span className="error-text">{errors.custName}</span>
+                      )}
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          className="form-control"
-                          placeholder="Last Name"
-                          type="text"
-                        />
-                      </div>
-                    </div>
+                   
                     <div className="col-md-12">
                       <div className="form-group">
                         <input
                           className="form-control"
                           placeholder="Phone"
                           type="text"
+                          value={custContact}
+                          onChange={(e) => setCustContact(e.target.value)}
                         />
+                         {errors.custContact && (
+                        <span className="error-text">{errors.custContact}</span>
+                      )}
                       </div>
                     </div>
                     <div className="col-md-12">
@@ -125,7 +214,12 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                           className="form-control"
                           placeholder="Email*"
                           type="email"
+                          value={custEmail}
+                          onChange={(e) => setCustEmail(e.target.value)}
                         />
+                           {errors.custEmail && (
+                        <span className="error-text">{errors.custEmail}</span>
+                      )}
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -137,6 +231,21 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                          
                         </select>
                       
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          className="form-control"
+                          placeholder="Message"
+                          type="text"
+                          value={custMessage}
+                        rows={6}
+                        onChange={(e) => setCustMessage(e.target.value)}
+                        />
+                            {errors.custMessage && (
+                        <span className="error-text">{errors.custMessage}</span>
+                      )}
                       </div>
                     </div>
                     {/* <div className="col-md-6">
