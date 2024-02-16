@@ -53,16 +53,16 @@ const Contact = () => {
   const [custMessage, setCustMessage] = useState("");
   // ============== Mail Print ======
   const ServForm = (e) => {
-    e.preventDefault();
+   
     if (handleValidation()) {
       var body =
-        '<!DOCTYPE html><html><head><title>Enquiry Lead</title></head><body><div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background-color:#f2f2f2;padding:20px"><h2 style="color:#6e3b70">Designboxx </h2><p>Hare Krishna,</p><p>Thank you for your interest in our services.</p><p>Please check your enquiry which generated from website:</p><table cellpadding="5" style="margin:0"><tr><td style="text-align:left"><strong>Name:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        '<!DOCTYPE html><html><head><title>Enquiry Lead</title></head><body><div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background-color:#f2f2f2;padding:20px"><h2 style="color:#6e3b70">Designboxx </h2><p>Hello Designboxx,</p><p>Thank you for your interest in our services.</p><p>Please check your enquiry which generated from website:</p><table cellpadding="5" style="margin:0"><tr><td style="text-align:left"><strong>Name:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custName +
         '</td></tr><tr><td style="text-align:left"><strong>Email:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custEmail +
         '</td></tr><tr><td style="text-align:left"><strong>Phone:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custContact +
-        '</td></tr><tr><td style="text-align:left"><strong>Total People:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        '</td></tr><tr><td style="text-align:left"><strong>Message:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custMessage +
         '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
       $.post(
@@ -73,7 +73,7 @@ const Contact = () => {
           bccMail: "skdmlead@gmail.com",
           mailSubject: "New Customer Lead",
           mailBody: body,
-          accountName: "katha",
+          accountName: "designboxx",
           accountLeadSource: "",
           accountLeadName: custName,
           // accountLeadEmail: custEmail,
@@ -183,7 +183,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                       <div className="form-group">
                         <input
                           className="form-control"
-                          placeholder="First Name"
+                          placeholder="Full Name"
                           type="text"
                           value={custName}
                           onChange={(e) => setCustName(e.target.value)}
@@ -262,7 +262,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                     </div> */}
                     
                     <div className="col-md-12">
-                      <button type="submit">Register Now</button>
+                      <button type="submit" onClick={ServForm}>Submit Now</button>
                     </div>
                   </div>
                 </form>
