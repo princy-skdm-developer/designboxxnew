@@ -63,7 +63,7 @@ const GalleryData = [
     Icon:rjc,
     Category:"Fashion Certificate Course",
     CategoryName:"Tailoring",
-    Ctitle:"(Womens/Mens Wear)",
+    Ctitle:"(Womens/Mens)",
     Duration:"6 Months",
     Earn:"Short Term Certificate",
     Desc:"Art of creating clothes by sewing fabric together using stitches and patterns to make them fit and look just right. ",

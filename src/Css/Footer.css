@@ -155,7 +155,7 @@ footer  .item {
   footer .f-item.address p {
     font-weight: 500;
     margin: 0;
-    padding-left: 10px;
+  
     text-transform: Capitalize;
     text-align:left;
     color:#111;
@@ -218,6 +218,14 @@ footer  .item {
     margin-bottom: 10px !important;
     padding-bottom: 10px;
   }
+ .mr-30
+ {
+  padding-left:40px;
+ }
+ .meals
+ {
+  height:20px;
+ }
   
   footer.bg-light .opening-info li {
     border-bottom: 1px dashed #cccccc;

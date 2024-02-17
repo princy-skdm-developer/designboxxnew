@@ -177,16 +177,17 @@ const About = () => {
                 happiness disposing household any old the. Widow downs.
                 Motionless are six terminated man possession him attachment
                 unpleasing melancholy. Sir smile arose one share. No abroad in
-                easily relied an whence lovers temper by.<ReadMore>
+                easily relied an whence lovers temper by.
              
                 Rajesh’s vision of MAAC began to take shape in 2001 as a
                 Founder. Brimming with an impassioned mindset, Rajesh always
-                wanted to bring a positive impact on the animation industry. He
+                wanted to bring a positive impact on the animation industry.
+                He
                 is also the founding force of ’24 FPS’, a revolutionary and
                 industry-recognized competition, to give students and
                 professionals their due recognition and fame in the Animation
                 and VFX industry.
-           
+                <ReadMore>
                 His visionary mindset saw him overlooking the state-of-the-art
                 production studio, Maya Entertainment Limited (MEL) as a CEO and
                 Executive Director. Mentoring the studio from 8 artists to

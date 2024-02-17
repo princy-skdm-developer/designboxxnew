@@ -166,4 +166,5 @@
 .table-bordered>:not(caption)>*>* {
     border-width: 0 1px;
     width: 1%;
+    height:fit-content;
 }

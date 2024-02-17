@@ -194,7 +194,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                       </div>
                     </div>
                    
-                    <div className="col-md-12">
+                    <div className="col-md-6">
                       <div className="form-group">
                         <input
                           className="form-control"
@@ -208,7 +208,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                       )}
                       </div>
                     </div>
-                    <div className="col-md-12">
+                    <div className="col-md-6">
                       <div className="form-group">
                         <input
                           className="form-control"
