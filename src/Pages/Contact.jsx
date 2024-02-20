@@ -226,11 +226,32 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                       <div className="form-group">
                         <select style={{}} className='form-control'>
                           <option value={1}>Select Course</option>
-                          <option value={2}>B.sc in Fashion Designing</option>
-                          <option value={3}>B.sc in Interior Designing</option>
+                          <option value={2}>B.sc in Fashion Designing (3 Years)</option>
+                          <option value={4}>Tailoring (6 Months)</option>
+                          <option value={5}>Fashion Illustration(6 Months)</option> 
+                          <option value={6}>Embroidery(6 Months)</option>
+                          <option value={7}>Fashion Styling(6 Months)</option> 
+                          <option value={3}>B.sc in Interior Designing (3 Years)</option>
+                          <option value={8}>Furniture Design & Layout (6 Months)</option>
+                          <option value={9}>Computer Aided Design (6 Months)</option>
+                          <option value={10}>Sustaineable Interior Design (6 Months)</option>
+                          <option value={11}>Lighting Design (6 Months)</option>
+                          <option value={12}>Interior Design Specialization (6 Months)</option>
+                          <option value={13}>Vastu (6 Months)</option>
                          
                         </select>
                       
+                      </div>
+                      
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Nearest Location</option>
+                          <option value={2}>Ghatkopar</option>
+                        
+                        </select>
+                       
                       </div>
                     </div>
                     <div className="col-md-12">
@@ -248,18 +269,7 @@ MUMBAI - 400086 (Opposite Ghatkopar Railway Station)</span>
                       )}
                       </div>
                     </div>
-                    {/* <div className="col-md-6">
-                      <div className="form-group">
-                        <select style={{}} className='form-control'>
-                          <option value={1}>Select Nearest Location</option>
-                          <option value={2}>Computer Engineering</option>
-                          <option value={4}>Accounting Technologies</option>
-                          <option value={5}>Web Development</option>
-                          <option value={6}>Machine Language</option>
-                        </select>
-                       
-                      </div>
-                    </div> */}
+                 
                     
                     <div className="col-md-12">
                       <button type="submit" onClick={ServForm}>Submit Now</button>
