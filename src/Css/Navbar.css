@@ -14,14 +14,14 @@ p{
 }
 .navbar-brand {
     padding: 0!important;
-    height:50px;
-    width:150px;
+    /* height:50px;
+    width:150px; */
 }
 
 .navbar-brand img {
     width:100%;
     height:100%;
-    transform: scale(1,1.3);
+    /* transform: scale(1,1); */
 /*     
     max-height: 57px; */
 }
@@ -197,8 +197,8 @@ header {
 }
 
 .NavLogo{
-    /* height: 10vh; */
-    width: 30vh;
+    height: 10vh;
+    /* width: 30vh; */
 }
 
 .NavLogo img{
