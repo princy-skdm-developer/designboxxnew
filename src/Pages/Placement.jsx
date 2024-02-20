@@ -441,7 +441,7 @@ const filterCategory = (Category) => {
         </div>
       </div>
       <div id="portfolio" className="portfolio-area default-padding">
-    <div className="container-fluid">
+    <div className="container">
       <div className="portfolio-items-area text-center">
         <div className="row">
           <div className="col-md-12 portfolio-content">

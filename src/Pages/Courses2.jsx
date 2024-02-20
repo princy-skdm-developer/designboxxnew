@@ -48,7 +48,7 @@ const Courses2 = () => {
         <section className="course-page-header">
           <div className="overlay">
             <div className="site-wrap">
-              <div className="container-fluid">
+              <div className="container">
                 <div className="row">
                   <div className="col-sm-6">
                     <nav aria-label="breadcrumb">

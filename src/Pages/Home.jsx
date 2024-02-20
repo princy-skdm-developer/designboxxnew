@@ -73,8 +73,9 @@ const Home = () => {
   }
   return (
     <div>
+      <section className="banner-carousel">
       <div
-        className="container-fluid home-slider"
+        className="container"
         style={{ padding: 0, overflow: "hidden" }}
       >
         <div className="row no-gutters">
@@ -156,11 +157,11 @@ const Home = () => {
                         Download Brochure
                       </a>
                     </div>
-                    <div className="col-12 d-flex justify-content-center">
+                    {/* <div className="col-12 d-flex justify-content-center">
                       <div className="row mt-4">
                         <div className="col-12 col-sm-7 mb-5"></div>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="clearfix" />
                   </div>
                 </div>
@@ -203,10 +204,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      </section>
       <section className="quick-banner">
         <div className="wrap-site">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row row-cols-1 row-cols-sm-4">
               <div className="col">
                 <table>
@@ -482,7 +483,7 @@ const Home = () => {
 
 
 <div id="portfolio" className="portfolio-area default-padding">
-    <div className="container-fluid">
+    <div className="container">
       <div className="portfolio-items-area">
         <h2>Our Courses</h2>
       <p style={{textAlign:'center'}}>Get a head Start on a degree/certification Today</p>
