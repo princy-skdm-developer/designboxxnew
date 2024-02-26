@@ -4,6 +4,7 @@ import logo from "../Images/Designboxx_logo_CDR_File_V15-removebg-preview-remove
 import { Link } from "react-router-dom";
 // import { HashLink } from "react-router-hash-link";
 // import ServDesc from "./ServDesc";
+import { HashLink } from 'react-router-hash-link';
 import { Nav, Navbar, Container } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
@@ -293,9 +294,9 @@ const NavBarCom = () => {
              
             </Navbar.Collapse>
             <div className="d-lg-block d-none">
-            <Link to="/Contact" className="btn btn-light scrollto2">
+            <HashLink to="/Contact#connect" className="btn btn-light scrollto2">
               Apply Now
-            </Link>
+            </HashLink>
             </div>
           </Container>
         </Navbar>
