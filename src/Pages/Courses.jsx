@@ -47,7 +47,7 @@ const Courses = () => {
         </div>
       </section>
       <div>
-        <section className="course-page-header">
+        {/* <section className="course-page-header">
           <div className="overlay">
             <div className="site-wrap">
               <div className="container">
@@ -63,9 +63,7 @@ const Courses = () => {
                         <li className="breadcrumb-item" active="">
                           <a>Courses</a>
                         </li>
-                        {/* <li className="breadcrumb-item">
-                          < to="/courses/">{CourseDesc.ServiceName}</>
-                        </li> */}
+                    
                       </ol>
                     </nav>
                     <h2>
@@ -130,7 +128,7 @@ const Courses = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <div className="page-content m-lg-5">
           <div className="course-detail">
             <div className="pages">
@@ -256,7 +254,7 @@ const Courses = () => {
                                       <th>S.No.</th>
                                       <th>Course</th>
 
-                                      <th>Mode Of Training</th>
+                                      <th>Semester Focus</th>
                                     </tr>
                                   </thead>
                                   <tbody>
@@ -270,9 +268,9 @@ const Courses = () => {
                                           <td class="Donate-amount">
                                             <p>{donationValue.CName1}</p>
                                           </td>
-                                          <td class="Donate-amount">
+                                          {/* <td rowspan="10" class="Donate-amount">
                                             <p>{donationValue.Mode}</p>
-                                          </td>
+                                          </td> */}
                                         </tr>
                                       )
                                     )}
