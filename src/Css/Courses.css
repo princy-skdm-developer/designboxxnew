@@ -462,12 +462,17 @@ tr{
       margin-bottom:50px;
   }
 }
-.accordion{
-  
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  overflow: hidden;
-  background:#666;
+.accordion-item{
+  margin: 10px 0;
+  box-shadow: 3px 5px 7px #eee;
+}
+.accordion-button:not(.collapsed){
+  background-color: #eee !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+}
+.accordion-button:focus{
+  box-shadow: unset !important;
 }
 /* table {
   border: 1px solid black;
