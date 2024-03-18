@@ -107,7 +107,8 @@ const Footer = () => {
                  
 
 
-                1st floor,Suchita & Orange Business Suite,Hirachand Desai Municipal Market, Ghatkopar West Mumbai -400086<br/>
+                1st Floor,Suchita & Orange Business Suite,
+22, Hirachand Desai Rd, भट्टवाडी, CGS Colony, Pant Nagar, Ghatkopar West, Mumbai, Maharashtra 400086<br/>
 
                 </p>
               </li>

@@ -1,13 +1,8 @@
 import React from "react";
 import "../Css/Courses.css";
-import MyBackgroundImage from "../Images/Carousel and backgrounds -20240115T070201Z-001/fashionbanner.jpg";
 import Footer from "../Component/Footer";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocation } from "react-router-dom";
-import Table from "react-bootstrap/Table";
-import illus from "../Images/icons/Adobe_Illustrator_CC_icon.svg.png";
-import photoshop from "../Images/icons/Adobe_Photoshop_CC_icon.svg.png";
-import corel from "../Images/icons/design-in-corel-draw.jpg";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import CourseData from "../Component/CourseData";
 
@@ -20,7 +15,7 @@ const Courses = () => {
     <div>
       <section
         className="breadcrumb-area shadow dark text-center  text-light"
-        style={{ backgroundImage: `url(${MyBackgroundImage})` }}
+        style={{ backgroundImage: `url(${data.img})` }}
       >
         <div className="container">
           <div className="row">
@@ -88,30 +83,39 @@ const Courses = () => {
                     data.cources.map((value, index) => (
                       <Accordion.Item eventKey={index}>
                         <Accordion.Header>
-                          {value.title}
-                          {/* <span>(First Semester & Second Semester)</span> */}
+                          <div className="d-flex flex-column align-items-start">
+                            <h5 className="m-0">{value.title}</h5>
+                            <p className="m-0">
+                              ({value?.syllabus[0]?.title},{" "}
+                              {value?.syllabus[1]?.title})
+                            </p>
+                          </div>
                         </Accordion.Header>
 
                         <AccordionBody>
-                          {value.syllabus.map((valueData, idexAgain) => (
-                            <div
-                              key={idexAgain}
-                              className="semesterTable mt-3 mb-3 "
-                            >
-                              <h3 style={{ fontWeight: "600" }}>
-                                {valueData.title}
-                              </h3>
+                          <div className="row">
+                            {value.syllabus.map((valueData, idexAgain) => (
                               <div
-                                className="cousrseData"
-                                style={{ border: "1px solid #808080" }}
+                                key={idexAgain}
+                                className="semesterTable mt-3 mb-3 col-md-6"
                               >
+                                <h3 style={{ fontWeight: "600" }}>
+                                  {valueData.title}
+                                </h3>
                                 <div
-                                  className="courseHead"
-                                  style={{ background: "#000", width: "100%" }}
+                                  className="courseBody"
+                                  style={{
+                                    padding: "0 12px",
+                                  }}
                                 >
                                   <div className="row">
-                                    <div className="col-7">
-                                      <div className="row">
+                                    <div className="col-12">
+                                      <div
+                                        className="row"
+                                        style={{
+                                          background: "#000",
+                                        }}
+                                      >
                                         <div className="col-2">
                                           <h5
                                             style={{
@@ -139,28 +143,6 @@ const Courses = () => {
                                           </h5>
                                         </div>
                                       </div>
-                                    </div>
-                                    <div className="col-5">
-                                      <h5
-                                        style={{
-                                          color: "#fff",
-                                          fontWeight: "bold",
-                                          margin: 0,
-                                          padding: "8px",
-                                          fontSize: "1rem",
-                                        }}
-                                      >
-                                        Semester Focus
-                                      </h5>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  className="courseBody"
-                                  style={{ padding: "0 12px" }}
-                                >
-                                  <div className="row">
-                                    <div className="col-md-7">
                                       {valueData.topics.map(
                                         (valueList, index) => (
                                           <div
@@ -181,6 +163,8 @@ const Courses = () => {
                                                   margin: 0,
                                                   padding: "10px",
                                                   fontSize: ".95rem",
+                                                  borderLeft:
+                                                    "1px solid #afafaf",
                                                   borderBottom:
                                                     "1px solid #afafaf",
                                                   height: "100%",
@@ -207,7 +191,9 @@ const Courses = () => {
                                                 }}
                                               >
                                                 {(valueData.title ===
-                                                  "SEMESTER 5" || valueData.title === "SEMESTER 6") &&
+                                                  "SEMESTER 5" ||
+                                                  valueData.title ===
+                                                    "SEMESTER 6") &&
                                                 index === 2 ? (
                                                   <div
                                                     dangerouslySetInnerHTML={{
@@ -223,30 +209,11 @@ const Courses = () => {
                                         )
                                       )}
                                     </div>
-                                    <div className="col-md-5 col-12">
-                                      <div className="d-flex align-items-center justify-content-center h-100 mt-3 mb-3">
-                                        <div className="row">
-                                          {valueData.icons.map(
-                                            (valueIcon, indexData) => (
-                                              <div
-                                                className="col-4 d-flex align-items-center justify-content-center mb-5"
-                                                key={indexData}
-                                              >
-                                                <img
-                                                  src={valueIcon}
-                                                  width={55}
-                                                />
-                                              </div>
-                                            )
-                                          )}
-                                        </div>
-                                      </div>
-                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </AccordionBody>
                       </Accordion.Item>
                     ))}
@@ -260,30 +227,16 @@ const Courses = () => {
                 </div>
 
                 <div className="table-responsive mt-lg-5 mt-2 row">
-                  <div className="table-list-software col-md-4">
-                    <img alt="" height={30} src={illus} width={30} />
-                    <div>
-                      <strong>Adobe Illustrator</strong>
-                      <br />
-                      Digital Photo Editing &amp; Compositing
+                  {data.icons.map((value) => (
+                    <div className="table-list-software col-md-2 col-sm-3 col-xs-4 col-6">
+                      <img alt="" src={value} style={{width:"100%", maxWidth:"180px"}} />
+                      {/* <div>
+                        <strong>Photoshop</strong>
+                        <br />
+                        Vector Graphics &amp; Designing
+                      </div> */}
                     </div>
-                  </div>
-                  <div className="table-list-software col-md-4">
-                    <img alt="" height={30} src={photoshop} width={30} />
-                    <div>
-                      <strong>Photoshop</strong>
-                      <br />
-                      Vector Graphics &amp; Designing
-                    </div>
-                  </div>
-                  <div className="table-list-software col-md-4">
-                    <img alt="" height={30} src={corel} width={30} />
-                    <div>
-                      <strong>Corel Draw</strong>
-                      <br />
-                      Vector Graphics &amp; Designing
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </section>
             </div>

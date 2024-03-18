@@ -40,36 +40,12 @@ CourseDescFashion.forEach((Category) => {
           <Route path='/' element={<Home />} />
           <Route path='Studentswork' element={<Studentswork/>} />
           <Route path='/Placement' element={<Placement/>} />
-         
           <Route path='/Gallery' element={<Gallery/>} />
-          <Route path='/Courses' element={<Courses/>}/>
+          <Route path='/interior-design' element={<Courses/>}/>
+          <Route path='/fashion-design' element={<Courses/>}/>
           <Route path='/Courses2' element={<Courses2/>}/>
           <Route path='/About' element={<About />} />
           <Route path='/Contact' element={<Contact />} />
-          {CourseDescFashion.map((route, index) => (
-            <Route
-              key={index}
-              exact
-              path={route.Slugs}
-              element={<Courses/>}
-            />
-            ))}
-              {CourseDescInterior.map((route, index) => (
-            <Route
-              key={index}
-              exact
-              path={route.Slugs}
-              element={<Courses2/>}
-            />
-            ))}
-            {slugObjectsArray.map((route, index) => (
-            <Route
-              key={index}
-              exact
-              path={route.slug}
-              element={<Courses/>}
-            />
-          ))}
         </Routes>
       </BrowserRouter>
     </div>
