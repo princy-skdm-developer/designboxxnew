@@ -8,18 +8,18 @@ import {Link} from "react-router-dom";
 import aboutImg from "../Images/Carousel and backgrounds -20240115T070201Z-001/Carousel and backgrounds/RJ College/1200 x 794.jpg";
 import fashion from "../Images/1200 x 794 (1).jpg";
 import interior from "../Images/1200 x 794.jpg";
-import campus from "../Images/Carousel and backgrounds -20240115T070201Z-001/Campus.jpg"
+import campus from "../Images/Campus_2.jpg";
 // import MyBackgroundImage from "../Images/16.jpg";
 // ----------student work------------------------
 
-import w1 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.45 PM (1).jpeg";
-import w2 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.45 PM (3).jpeg";
-import w3 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.45 PM.jpeg";
-import w7 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.02.46 PM.jpeg";
-import w8 from "../Images/Students work/WhatsApp Image 2023-12-05 at 1.40.28 PM.jpeg";
-import w4 from "../Images/Students work/WhatsApp Image 2023-12-06 at 2.20.49 PM.jpeg";
-import w5 from "../Images/Students work/WhatsApp Image 2023-12-06 at 2.20.47 PM.jpeg";
-import w6 from "../Images/Students work/WhatsApp Image 2023-12-06 at 2.20.44 PM (1).jpeg";
+import w1 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0006.jpg";
+import w2 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0007.jpg";
+import w3 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0008.jpg";
+import w7 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0009.jpg";
+import w8 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0010.jpg";
+import w4 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0011.jpg";
+import w5 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0013.jpg";
+import w6 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0012.jpg";
 // -------------------------why icons-----------------
 import univ from "../Images/icons/university.png";
 import tie from "../Images/icons/businessman.png";
@@ -139,7 +139,7 @@ const Home = () => {
       $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
-          toEmail: "princygrwl4@gmail.com",
+          toEmail: "grwl4@gmail.com",
           fromEmail: "skdmlead@gmail.com",
           bccMail: "skdmlead@gmail.com",
           mailSubject: "New Customer Lead",
@@ -242,7 +242,7 @@ const Home = () => {
                       <a
                         href="/upload/files/Main%20brochure/Frameboxx%20Brochure%202022.pdf"
                         className="btn btn-main"
-                        download=""
+                        download="\="
                       >
                         Download Brochure
                       </a>

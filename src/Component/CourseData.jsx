@@ -69,10 +69,10 @@ const CourseData = [
       fashion12,
       fashion13,
       fashion14,
-      fashion15,
       fashion16,
       fashion17,
       fashion18,
+      fashion15,
     ],
     cources: [
       {
@@ -198,13 +198,13 @@ const CourseData = [
       interior10,
       interior11,
       interior12,
-      interior13,
       interior14,
       interior15,
       interior16,
       interior17,
       interior18,
       interior19,
+      interior13,
     ],
     cources: [
       {

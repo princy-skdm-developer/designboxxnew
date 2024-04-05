@@ -1,16 +1,104 @@
-import React from "react";
+import React, {useState} from "react";
 import "../Css/Courses.css";
+import $ from 'jquery';
 import Footer from "../Component/Footer";
 import Accordion from "react-bootstrap/Accordion";
 import { useLocation } from "react-router-dom";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import CourseData from "../Component/CourseData";
-
+import cform from "../Images/logos/enquiry-removebg-preview (1).png";
 const Courses = () => {
   const search = useLocation();
   const Path = search.pathname;
   const data = CourseData.find((value) => value.slug == Path);
 
+
+  const [errors, setErrors] = useState({
+    custName: "",
+    custEmail: "",
+    custContact: "",
+    custMessage: "",
+  });
+
+  const handleValidation = () => {
+    let isValid = true;
+    const newErrors = {
+      custName: "",
+      custEmail: "",
+      custContact: "",
+      custMessage: "",
+    };
+    if (!custName.trim()) {
+      isValid = false;
+      newErrors.custName = "Name is required";
+    }
+
+    const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    if (!custEmail.match(emailRegex)) {
+      isValid = false;
+      newErrors.custEmail = "Email is not valid";
+    }
+
+    if (!custContact.trim()) {
+      isValid = false;
+      newErrors.custContact = "Phone is required";
+    } else if (!/^\d{10}$/.test(custContact)) {
+      isValid = false;
+      newErrors.custContact = "Phone must have 10 digits";
+    }
+
+    if (!custMessage.trim()) {
+      isValid = false;
+      newErrors.custMessage = "Write a Message";
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+  // ============ Mail function ==========
+  const [custName, setCustName] = useState("");
+  const [custEmail, setCustEmail] = useState("");
+  const [custContact, setCustContact] = useState("");
+  const [custMessage, setCustMessage] = useState("");
+  // ============== Mail Print ======
+  const ServForm = (e) => {
+   
+    if (handleValidation()) {
+      var body =
+        '<!DOCTYPE html><html><head><title>Enquiry Lead</title></head><body><div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background-color:#f2f2f2;padding:20px"><h2 style="color:#6e3b70">Designboxx </h2><p>Hello Designboxx,</p><p>Thank you for your interest in our services.</p><p>Please check your enquiry which generated from website:</p><table cellpadding="5" style="margin:0"><tr><td style="text-align:left"><strong>Name:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custName +
+        '</td></tr><tr><td style="text-align:left"><strong>Email:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custEmail +
+        '</td></tr><tr><td style="text-align:left"><strong>Phone:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custContact +
+        '</td></tr><tr><td style="text-align:left"><strong>Message:</strong></td><td style="text-align:left;color:#6e3b70">' +
+        custMessage +
+        '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
+      $.post(
+        "https://skdm.in/server/v1/send_lead_mail.php",
+        {
+          toEmail: "info@designboxx.in",
+          fromEmail: "skdmlead@gmail.com",
+          bccMail: "skdmlead@gmail.com",
+          mailSubject: "New Customer Lead",
+          mailBody: body,
+          accountName: "designboxx",
+          accountLeadSource: "",
+          accountLeadName: custName,
+          // accountLeadEmail: custEmail,
+        },
+        function (dataa, status) {
+          console.log("data :" + dataa);
+          console.log("name:" + custName);
+          console.log("name:" + custEmail);
+        }
+      );
+
+      alert("Your Form has Submitted Our team will contact with You  soon.");
+      e.preventDefault();
+      return false;
+    }
+  };
   return (
     <div>
       <section
@@ -243,7 +331,126 @@ const Courses = () => {
           </div>
         </div>
       </div>
-
+      <section>
+      <div className="reg-area default-padding-top">
+        <div className="container">
+          <div className="row">
+            {/* <div className="reg-items"> */}
+            <div className="col-md-6 reg-form pb-3">
+                <div className="site-heading text-left">
+                  <h2>Enquire Now</h2>
+                  <p>
+                    Fill the form so we can get to know you and your needs better.
+                  </p>
+                </div>
+                <form action="#">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Full Name"
+                          type="text"
+                          value={custName}
+                          onChange={(e) => setCustName(e.target.value)}
+                        />
+                           {errors.custName && (
+                        <span className="error-text">{errors.custName}</span>
+                      )}
+                      </div>
+                    </div>
+                   
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Phone"
+                          type="text"
+                          value={custContact}
+                          onChange={(e) => setCustContact(e.target.value)}
+                        />
+                         {errors.custContact && (
+                        <span className="error-text">{errors.custContact}</span>
+                      )}
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Email*"
+                          type="email"
+                          value={custEmail}
+                          onChange={(e) => setCustEmail(e.target.value)}
+                        />
+                           {errors.custEmail && (
+                        <span className="error-text">{errors.custEmail}</span>
+                      )}
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Course</option>
+                          <option value={2}>B.sc in Fashion Designing (3 Years)</option>
+                          <option value={4}>Tailoring (6 Months)</option>
+                          <option value={5}>Fashion Illustration(6 Months)</option> 
+                          <option value={6}>Embroidery(6 Months)</option>
+                          <option value={7}>Fashion Styling(6 Months)</option> 
+                          <option value={3}>B.sc in Interior Designing (3 Years)</option>
+                          <option value={8}>Furniture Design & Layout (6 Months)</option>
+                          <option value={9}>Computer Aided Design (6 Months)</option>
+                          <option value={10}>Sustaineable Interior Design (6 Months)</option>
+                          <option value={11}>Lighting Design (6 Months)</option>
+                          <option value={12}>Interior Design Specialization (6 Months)</option>
+                          <option value={13}>Vastu (6 Months)</option>
+                         
+                        </select>
+                      
+                      </div>
+                      
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Nearest Location</option>
+                          <option value={2}>Ghatkopar</option>
+                        
+                        </select>
+                       
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          className="form-control"
+                          placeholder="Message"
+                          type="text"
+                          value={custMessage}
+                        rows={6}
+                        onChange={(e) => setCustMessage(e.target.value)}
+                        />
+                            {errors.custMessage && (
+                        <span className="error-text">{errors.custMessage}</span>
+                      )}
+                      </div>
+                    </div>
+                 
+                    
+                    <div className="col-md-12">
+                      <button type="submit" onClick={ServForm}>Submit Now</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div className="col-md-6 thumb">
+                <img src={cform} alt="Thumb" />
+              </div>
+            </div>
+          {/* </div> */}
+        </div>
+      </div>
+      </section>
       <Footer />
     </div>
   );
