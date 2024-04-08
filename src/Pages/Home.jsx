@@ -220,7 +220,7 @@ const Home = () => {
         style={{ padding: 0, overflow: "hidden" }}
       >
         <div className="row no-gutters">
-          <h1 textAlign="center">Best Interior & Fashion Designing Institutes</h1>
+          <h1 textAlign="center">Best Interior & Fashion Designing Institute</h1>
           <div className="col-lg-6 col-12 align-self-center order-lg-1 order-2">
             <div className="slider-sidebar">
               <div className="row">
