@@ -1,5 +1,6 @@
 import React from 'react'
 import  '../Css/Footer.css';
+import {Link} from "react-router-dom"
 import logo from "../Images/Designboxx_logo_CDR_File_V15-removebg-preview-removebg-preview (1).png";
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
     <div className="row">
       {/* <div className="f-items"> */}
         <div className="col-md-4 item">
-          <div className="f-item">
-            <img src={logo} alt="Logo" />
+          <div className="f-item"><Link to="/">
+            <img src={logo} alt="Logo" /></Link>
             <p>
             DesignBoxx, is a cutting-edge educational institution that paves the way for a dynamic future in Fashion Designing and Interior Designing. 
             </p>
@@ -40,13 +41,13 @@ const Footer = () => {
             <h4>Links</h4>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/About">About us</a>
+                <Link to="/designing-institutes-ghatkopar">About us</Link>
               </li>
               <li>
-                <a href="/Courses">Courses</a>
+                <Link to="/Courses">Courses</Link>
               </li>
              
               {/* <li>
@@ -69,10 +70,10 @@ const Footer = () => {
                 <a href="#">Whydesignboxx</a>
               </li>
               <li>
-                <a href="/Studentswork">Students Work</a>
+                <Link to="/designboxx-interior-fashion-designing-institutes">Life at Designboxx</Link>
               </li>
               <li>
-                <a href="/Contact">Contact Us</a>
+                <Link to="/top-designing-institutes-near-ghatkopar">Contact Us</Link>
               </li>
               {/* <li>
                 <a href="#">LearnPress</a>

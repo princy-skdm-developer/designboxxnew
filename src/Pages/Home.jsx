@@ -3,6 +3,7 @@ import Tabs from "./Tabs";
 import Work from "./Work";
 import $ from 'jquery';
 import GalleryData from '../Component/GalleryData';
+import EnquiryModal from "../Component/EnquiryModal";
 import "../Css/Home.css";
 import {Link} from "react-router-dom";
 import aboutImg from "../Images/Carousel and backgrounds -20240115T070201Z-001/Carousel and backgrounds/RJ College/1200 x 794.jpg";
@@ -11,7 +12,7 @@ import interior from "../Images/1200 x 794.jpg";
 import campus from "../Images/Campus_2.jpg";
 // import MyBackgroundImage from "../Images/16.jpg";
 // ----------student work------------------------
-
+import {MetaTags} from "react-meta-tags";
 import w1 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0006.jpg";
 import w2 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0007.jpg";
 import w3 from "../Images/Student Works -20240404T100227Z-001/Student Works/IMG-20240327-WA0008.jpg";
@@ -72,7 +73,24 @@ const Home = () => {
       setData(filteredData);
   
   }
+  const [inputFieldValue, setInputFieldValue] = useState('');
 
+  // Function to handle input field value change
+  const handleInputChange = (event) => {
+    setInputFieldValue(event.target.value);
+  };
+  // ============ Json  ==========
+  const [selectedDonationValue, setSelectedDonationValue] = useState(null);
+
+  // ============== Mail Print ======
+
+  console.log(selectedDonationValue);
+  // popup Modal
+  const [modalShow, setModalShow] = React.useState(false);
+  const openModal = (donationValue) => {
+    setSelectedDonationValue(donationValue);
+    setModalShow(true);
+  };
 
 
   const [errors, setErrors] = useState({
@@ -89,6 +107,7 @@ const Home = () => {
       custEmail: "",
       custContact: "",
       custMessage: "",
+      custSubject: "",
     };
     if (!custName.trim()) {
       isValid = false;
@@ -122,6 +141,7 @@ const Home = () => {
   const [custEmail, setCustEmail] = useState("");
   const [custContact, setCustContact] = useState("");
   const [custMessage, setCustMessage] = useState("");
+  const [custSubject, setCustSubject] = useState("");
   // ============== Mail Print ======
   const ServForm = (e) => {
    
@@ -135,11 +155,15 @@ const Home = () => {
         custContact +
         '</td></tr><tr><td style="text-align:left"><strong>Message:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custMessage +
+        '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
+      
+        custSubject +
         '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
-      $.post(
+        <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
+        $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
-          toEmail: "grwl4@gmail.com",
+          toEmail: "info@designboxx.in",
           fromEmail: "skdmlead@gmail.com",
           bccMail: "skdmlead@gmail.com",
           mailSubject: "New Customer Lead",
@@ -163,15 +187,44 @@ const Home = () => {
   };
   return (
     <div>
+                   <MetaTags>
+        <title> Best Interior & Fashion Designing Institutes | Designboxx</title>
+        <meta name="title" content="Best Interior & Fashion Designing Institutes | Designboxx" />
+        <meta property="og:title" content="Best Interior & Fashion Designing Institutes | Designboxx" />
+       
+        <meta
+          name="description"
+          content="Find the Best Interior & Fashion Designing Institutes to kickstart your creative journey. Explore top-notch programs and unleash your artistic potential ."
+        />
+
+        <meta
+          property="og:description"
+          content="Find the Best Interior & Fashion Designing Institutes to kickstart your creative journey. Explore top-notch programs and unleash your artistic potential ."
+        />
+        <meta
+          name="keywords"
+          content="Best Interior & Fashion Designing Institutes,
+          Designing Institutes in Ghatkopar,
+          Fashion Designing Courses in Ghatkopar,
+          Interior Designing Courses in Ghatkkopar,
+          Designboxx Interior & Fashion Designing Institutes,
+           Top Designing Institutes near Ghatkopar"
+        />
+        <link rel="canonical" href="https://designboxx.in/" />
+        <meta name="google-site-verification" content="ocFq8-RaV2esUMjJ0D2Puv0LSgd78Nqr57WJJgY8AJU" />
+      </MetaTags>
+{/* --------------------------------------------Meta tags---------------- */}
       <section className="banner-carousel">
       <div
         className="container"
         style={{ padding: 0, overflow: "hidden" }}
       >
         <div className="row no-gutters">
+          <h1 textAlign="center">Best Interior & Fashion Designing Institutes</h1>
           <div className="col-lg-6 col-12 align-self-center order-lg-1 order-2">
             <div className="slider-sidebar">
               <div className="row">
+                 
                 <div
                   className="col-md-11 col-12 offset-md-1 "
                   style={{ textAlign: "center" }}
@@ -181,6 +234,7 @@ const Home = () => {
                     data-sr-id={1}
                     
                   >
+                 
                     <h3
                       style={{
                         
@@ -239,13 +293,18 @@ const Home = () => {
                     </div>
                     {/* </div> */}
                     <div className="col-lg-auto col-12 mt-3">
-                      <a
+                      {/* <a
                         href="/upload/files/Main%20brochure/Frameboxx%20Brochure%202022.pdf"
                         className="btn btn-main"
                         download="\="
-                      >
-                        Download Brochure
-                      </a>
+                      > */}
+                      <EnquiryModal
+                            show={modalShow}
+                            // donationValue={donationValue.Tvalue}
+                          
+                            onHide={() => setModalShow(false)}
+                          />
+                      {/* </a> */}
                     </div>
                     {/* <div className="col-12 d-flex justify-content-center">
                       <div className="row mt-4">
@@ -270,22 +329,22 @@ const Home = () => {
               >
                 <SwiperSlide>
                   <div className="bannerImg" id="banner1">
-                    <img src={aboutImg} alt="" />
+                    <img src={aboutImg} alt="fashion designing institute" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bannerImg" id="banner2">
-                    <img src={fashion} alt="" />
+                    <img src={fashion} alt="interior designing institute" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bannerImg">
-                    <img src={interior} alt="" />
+                    <img src={interior} alt="interior designing institute" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bannerImg">
-                    <img src={campus} alt="" />
+                    <img src={campus} alt="designing institute ghatkopar" />
                   </div>
                 </SwiperSlide>
                
@@ -656,7 +715,7 @@ const Home = () => {
         <div className="item">
           {" "}
           <span className="icon feature_box_col_five">
-            <img src={team} alt=""/>
+            <img src={team} alt="tailoring course"/>
           </span>
           <h6>  Project And Portfolio Creation Collaborative Learning Approach
 </h6>
@@ -748,7 +807,7 @@ const Home = () => {
                <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w1} alt="Thumb" />
+                  <img src={w1} alt="fashion illustration course" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -759,7 +818,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w2} alt="Thumb" />
+                  <img src={w2} alt="fashion design course" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -770,7 +829,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w6} alt="Thumb" />
+                  <img src={w6} alt="interior design course" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -783,7 +842,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w3} alt="Thumb" />
+                  <img src={w3} alt="furniture design course" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -794,7 +853,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w4} alt="Thumb" />
+                  <img src={w4} alt="Computer aided design" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -805,7 +864,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w5} alt="Thumb" />
+                  <img src={w5} alt="jwellery design" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -816,7 +875,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w8} alt="Thumb" />
+                  <img src={w8} alt="embroidery work course" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -827,7 +886,7 @@ const Home = () => {
             <div className="col-lg-3 col-md-6">
               <div className="advisor-item">
                 <div className="info-box">
-                  <img src={w7} alt="Thumb" />
+                  <img src={w7} alt="designbox students" />
                   {/* <div className="stick">
                     <p>Hello</p>
 
@@ -896,7 +955,7 @@ const Home = () => {
                         I am thrilled to share my positive experience at Interior Design Department of Ramniranjan Jhunjhunwala College of Arts, Science and Commerce. The faculty's expertise and hands-on approach enriched my understanding of design principles. The collaborative environment and diverse assignments prepared me for a dynamic career in interior design.
                         </p>
                         <div className="thumb">
-                        <img src={prof} alt="Thumb" />
+                        <img src={prof} alt="designbox students" />
                         <div className=''>
                         <h4>Shivnath Siddhu Harpad</h4>
                         <span>Fashion Design Student</span>
@@ -915,7 +974,7 @@ const Home = () => {
                         As a student who entered a new field and wants to make a career in the creative field I am grateful for the faculty and the staff of RJ college for always listening to feedback and trying to do their best for us students.
                         </p>
                         <div className="thumb">
-                        <img src={st2} alt="Thumb" />
+                        <img src={st2} alt="designbox students" />
                         <div className=''>
                         <h4>Shailie Naranje</h4>
                         <span>Student</span>
@@ -932,7 +991,7 @@ const Home = () => {
                         Enrolling in college was a transformative journey, and I am grateful for the enriching experience it provided. The dedicated faculty, diverse learning environment, and opportunities for personal and academic growth have been invaluable.
                         </p>
                         <div className="thumb">
-                        <img src={st4} alt="Thumb" />
+                        <img src={st4} alt="designbox students" />
                         <div className=''>
                         <h4>Maruf Jatu </h4>
                         <span>Interior Design Student</span>
@@ -951,7 +1010,8 @@ const Home = () => {
                         The environment is good.. the staff of the college is very kind.. the faculty expertise hand's on approach enriched my understanding of design principles.. 
                         </p>
                         <div className="thumb">
-                        <img src={st3} alt="Thumb" />
+                        <img src={st3} alt="designbox students
+                        " />
                         <div className=''>
                         <h4>Yashashvi virendra shrigadhi </h4>
                         <span>Fashion Design Student</span>
@@ -967,7 +1027,7 @@ const Home = () => {
                         <p>
                         In my experience all the teachers are very supportive and friendly and The relationship between faculty and student is very cordial, which gave me an opportunity to excel in my studies.    </p>
                         <div className="thumb">
-                        <img src={st1} alt="Thumb" />
+                        <img src={st1} alt="designbox students" />
                         <div className=''>
                         <h4>Anurag Chaturvedi </h4>
                         <span>Interior Design Student</span>
@@ -983,7 +1043,7 @@ const Home = () => {
                         <p>
                         I like the faculty and I feel I had the best environment for my studies. I learned many new things from my teachers who were very helpful in every way they could. The teacher-student interaction was great. The teachers were very friendly because of which I could clarify many of my doubts.One of the best things about college life is that you get a new experience every day. In my college life, along with studying, I and my friends enjoyed a lot of other things. We traveled to lots of places, had new experiences, and learned many new things. </p>
                         <div className="thumb">
-                        <img src={st5} alt="Thumb" />
+                        <img src={st5} alt="designbox students" />
                         <div className=''>
                         <h4>Anjali Gupta</h4>
                         <span>Interior Design Student</span>
@@ -1060,20 +1120,20 @@ const Home = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
-                        <select style={{}} className='form-control'>
-                          <option value={1}>Select Course</option>
-                          <option value={2}>B.sc in Fashion Designing (3 Years)</option>
-                          <option value={4}>Tailoring (6 Months)</option>
-                          <option value={5}>Fashion Illustration(6 Months)</option> 
-                          <option value={6}>Embroidery(6 Months)</option>
-                          <option value={7}>Fashion Styling(6 Months)</option> 
-                          <option value={3}>B.sc in Interior Designing (3 Years)</option>
-                          <option value={8}>Furniture Design & Layout (6 Months)</option>
-                          <option value={9}>Computer Aided Design (6 Months)</option>
-                          <option value={10}>Sustaineable Interior Design (6 Months)</option>
-                          <option value={11}>Lighting Design (6 Months)</option>
-                          <option value={12}>Interior Design Specialization (6 Months)</option>
-                          <option value={13}>Vastu (6 Months)</option>
+                        <select style={{}} className='form-control' onChange={(e) => setCustSubject(e.target.value)}>
+                          <option >Select Course</option>
+                          <option value="B.sc in Fashion Designing (3 Years)">B.sc in Fashion Designing (3 Years)</option>
+                          <option value="Tailoring (6 Months)">Tailoring (6 Months)</option>
+                          <option value="Fashion Illustration(6 Months)">Fashion Illustration(6 Months)</option> 
+                          <option value="Embroidery(6 Months)">Embroidery(6 Months)</option>
+                          <option value="Fashion Styling(6 Months)">Fashion Styling(6 Months)</option> 
+                          <option value="B.sc in Interior Designing (3 Years)">B.sc in Interior Designing (3 Years)</option>
+                          <option value="Furniture Design & Layout (6 Months)">Furniture Design & Layout (6 Months)</option>
+                          <option value="Computer Aided Design (6 Months)">Computer Aided Design (6 Months)</option>
+                          <option value="Sustaineable Interior Design (6 Months)">Sustaineable Interior Design (6 Months)</option>
+                          <option value="Lighting Design (6 Months)">Lighting Design (6 Months)</option>
+                          <option value="Interior Design Specialization (6 Months)">Interior Design Specialization (6 Months)</option>
+                          <option value="Vastu">Vastu (6 Months)</option>
                          
                         </select>
                       
@@ -1108,13 +1168,14 @@ const Home = () => {
                  
                     
                     <div className="col-md-12">
-                      <button type="submit" onClick={ServForm}>Submit Now</button>
+                      <button type="submit" htmlType="submit" onClick={ServForm}>Submit Now</button>
                     </div>
                   </div>
                 </form>
               </div>
               <div className="col-md-6 thumb">
-                <img src={cform} alt="Thumb" />
+                <img src={cform} alt="designbox students
+                " />
               </div>
             </div>
           {/* </div> */}
@@ -1123,6 +1184,7 @@ const Home = () => {
       </section>
     
       <Footer />
+      
     </div>
   );
 };

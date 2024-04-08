@@ -17,7 +17,9 @@ const Art = ({data}) => {
 
   return (
     <div>
-   <div className='row'>
+      <section>
+        <div className='container'>
+        <div className='row'>
     {
                      data.map((value,index) => {
                          const {Eventimg } = value
@@ -50,6 +52,9 @@ const Art = ({data}) => {
                      })
                    }
            </div>
+        </div>
+      </section>
+   
            
      </div>
   )

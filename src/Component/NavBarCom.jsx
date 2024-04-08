@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import $ from "jquery";
 import { useState, useEffect, React } from "react";
+import CourseData from "../Component/CourseData";
 import CourseDescFashion from "./CourseDescFashion";
 import CourseDescInterior from "./CourseDescInterior";
 const NavBarCom = () => {
@@ -122,7 +123,7 @@ const NavBarCom = () => {
                 <Link to="/" onClick={handleNavbarCollapse} className="nav-link"> 
                   Home
                 </Link>
-                <Link to="/About" onClick={handleNavbarCollapse} className="nav-link">
+                <Link to="designing-institutes-ghatkopar" onClick={handleNavbarCollapse} className="nav-link">
                   About Us
                 </Link>
                
@@ -135,7 +136,17 @@ const NavBarCom = () => {
                                       <div className="dropdown_list">
            
            
-                                      {CourseDescFashion.map((ele) => {
+                                      {CourseData.map((ele) => {
+                            const { title, slug } = ele;
+                            return (
+                              <>
+                                <Nav.Link href={`${slug}`}>
+                                  <Link  to={`${slug}`}  className="dropdown-item" onClick={handleNavbarCollapse}>{title}</Link>
+                                </Nav.Link>
+                              </>
+                            );
+                          })}
+                           {/* {CourseDescInterior.map((ele) => {
                             const { ServiceName, Slugs } = ele;
                             return (
                               <>
@@ -144,17 +155,7 @@ const NavBarCom = () => {
                                 </Nav.Link>
                               </>
                             );
-                          })}
-                           {CourseDescInterior.map((ele) => {
-                            const { ServiceName, Slugs } = ele;
-                            return (
-                              <>
-                                <Nav.Link href={`${Slugs}`}>
-                                  <Link  to={`${Slugs}`}  className="dropdown-item" onClick={handleNavbarCollapse}>{ServiceName}</Link>
-                                </Nav.Link>
-                              </>
-                            );
-                          })}
+                          })} */}
               
                
                 <ul className="dropdown-menu">
@@ -187,11 +188,11 @@ const NavBarCom = () => {
               </button>
             
             
-              <Link to="/Studentswork" onClick={handleNavbarCollapse} className="nav-link">
+              <Link to="/designboxx-interior-fashion-designing-institutes" onClick={handleNavbarCollapse} className="nav-link">
                   Life At Designboxx
                 </Link>
          
-                <Link to="/Contact" onClick={handleNavbarCollapse} className="nav-link">
+                <Link to="/top-designing-institutes-near-ghatkopar" onClick={handleNavbarCollapse} className="nav-link">
                   Contact Us
                 </Link>
                 

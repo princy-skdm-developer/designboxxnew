@@ -3,12 +3,14 @@ import "../Css/Contact.css";
 import MyBackgroundImage from "../Images/contactBanner.jpg";
 import Footer from "../Component/Footer";
 import $ from "jquery";
+import { MetaTags } from "react-meta-tags";
 const Contact = () => {
   const [errors, setErrors] = useState({
     custName: "",
     custEmail: "",
     custContact: "",
     custMessage: "",
+    custSubject:"",
   });
 
   const handleValidation = () => {
@@ -18,6 +20,7 @@ const Contact = () => {
       custEmail: "",
       custContact: "",
       custMessage: "",
+      custSubject:"",
     };
     if (!custName.trim()) {
       isValid = false;
@@ -51,8 +54,11 @@ const Contact = () => {
   const [custEmail, setCustEmail] = useState("");
   const [custContact, setCustContact] = useState("");
   const [custMessage, setCustMessage] = useState("");
+  
+  const [custSubject, setCustSubject] = useState("");
   // ============== Mail Print ======
   const ServForm = (e) => {
+   
     if (handleValidation()) {
       var body =
         '<!DOCTYPE html><html><head><title>Enquiry Lead</title></head><body><div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;background-color:#f2f2f2;padding:20px"><h2 style="color:#6e3b70">Designboxx </h2><p>Hello Designboxx,</p><p>Thank you for your interest in our services.</p><p>Please check your enquiry which generated from website:</p><table cellpadding="5" style="margin:0"><tr><td style="text-align:left"><strong>Name:</strong></td><td style="text-align:left;color:#6e3b70">' +
@@ -63,8 +69,12 @@ const Contact = () => {
         custContact +
         '</td></tr><tr><td style="text-align:left"><strong>Message:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custMessage +
+        '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
+      
+        custSubject +
         '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
-      $.post(
+        <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
+        $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
           toEmail: "info@designboxx.in",
@@ -91,6 +101,34 @@ const Contact = () => {
   };
   return (
     <div>
+             <MetaTags>
+        <title> Top Designing Institutes near Ghatkopar | Designboxx</title>
+        <meta name="title" content="Top Designing Institutes near Ghatkopar | Designboxx" />
+        <meta property="og:title" content="Top Designing Institutes near Ghatkopar | Designboxx" />
+       
+        <meta
+          name="description"
+          content="Explore the Top Designing Institutes near Ghatkopar offering comprehensive courses. Unlock your creativity & pursue your passion with expert guidance. "
+        />
+
+        <meta
+          property="og:description"
+          content="Explore the Top Designing Institutes near Ghatkopar offering comprehensive courses. Unlock your creativity & pursue your passion with expert guidance. "
+        />
+        <meta
+          name="keywords"
+          content="Best Interior & Fashion Designing Institutes,
+          Designing Institutes in Ghatkopar,
+          Fashion Designing Courses in Ghatkopar,
+          Interior Designing Courses in Ghatkkopar,
+          Designboxx Interior & Fashion Designing Institutes,
+           Top Designing Institutes near Ghatkopar"
+        />
+        <link rel="canonical" href="https://designboxx.in/top-designing-institutes-near-ghatkopar" />
+        <meta name="google-site-verification" content="ocFq8-RaV2esUMjJ0D2Puv0LSgd78Nqr57WJJgY8AJU" />
+      </MetaTags>
+{/* --------------------------------------------Meta tags---------------- */}
+  
       <section
         className="breadcrumb-area shadow dark text-center  text-light"
         style={{ backgroundImage: `url(${MyBackgroundImage})` }}
@@ -98,7 +136,7 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Contact Us</h1>
+              <h1> Top Designing Institute near Ghatkopar</h1>
               {/* <ul className="breadcrumb">
           <li>
             <a href="#">
@@ -187,114 +225,104 @@ const Contact = () => {
                 </p>
               </div>
               <form action="#">
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <input
-                        className="form-control"
-                        placeholder="Full Name"
-                        type="text"
-                        value={custName}
-                        onChange={(e) => setCustName(e.target.value)}
-                      />
-                      {errors.custName && (
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Full Name"
+                          type="text"
+                          value={custName}
+                          onChange={(e) => setCustName(e.target.value)}
+                        />
+                           {errors.custName && (
                         <span className="error-text">{errors.custName}</span>
                       )}
+                      </div>
                     </div>
-                  </div>
-
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        className="form-control"
-                        placeholder="Phone"
-                        type="text"
-                        value={custContact}
-                        onChange={(e) => setCustContact(e.target.value)}
-                      />
-                      {errors.custContact && (
+                   
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Phone"
+                          type="text"
+                          value={custContact}
+                          onChange={(e) => setCustContact(e.target.value)}
+                        />
+                         {errors.custContact && (
                         <span className="error-text">{errors.custContact}</span>
                       )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        className="form-control"
-                        placeholder="Email*"
-                        type="email"
-                        value={custEmail}
-                        onChange={(e) => setCustEmail(e.target.value)}
-                      />
-                      {errors.custEmail && (
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          className="form-control"
+                          placeholder="Email*"
+                          type="email"
+                          value={custEmail}
+                          onChange={(e) => setCustEmail(e.target.value)}
+                        />
+                           {errors.custEmail && (
                         <span className="error-text">{errors.custEmail}</span>
                       )}
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <select style={{}} className="form-control">
-                        <option value={1}>Select Course</option>
-                        <option value={2}>
-                          B.sc in Fashion Designing (3 Years)
-                        </option>
-                        <option value={4}>Tailoring (6 Months)</option>
-                        <option value={5}>
-                          Fashion Illustration(6 Months)
-                        </option>
-                        <option value={6}>Embroidery(6 Months)</option>
-                        <option value={7}>Fashion Styling(6 Months)</option>
-                        <option value={3}>
-                          B.sc in Interior Designing (3 Years)
-                        </option>
-                        <option value={8}>
-                          Furniture Design & Layout (6 Months)
-                        </option>
-                        <option value={9}>
-                          Computer Aided Design (6 Months)
-                        </option>
-                        <option value={10}>
-                          Sustaineable Interior Design (6 Months)
-                        </option>
-                        <option value={11}>Lighting Design (6 Months)</option>
-                        <option value={12}>
-                          Interior Design Specialization (6 Months)
-                        </option>
-                        <option value={13}>Vastu (6 Months)</option>
-                      </select>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control' onChange={(e) => setCustSubject(e.target.value)}>
+                          <option >Select Course</option>
+                          <option value="B.sc in Fashion Designing (3 Years)">B.sc in Fashion Designing (3 Years)</option>
+                          <option value="Tailoring (6 Months)">Tailoring (6 Months)</option>
+                          <option value="Fashion Illustration(6 Months)">Fashion Illustration(6 Months)</option> 
+                          <option value="Embroidery(6 Months)">Embroidery(6 Months)</option>
+                          <option value="Fashion Styling(6 Months)">Fashion Styling(6 Months)</option> 
+                          <option value="B.sc in Interior Designing (3 Years)">B.sc in Interior Designing (3 Years)</option>
+                          <option value="Furniture Design & Layout (6 Months)">Furniture Design & Layout (6 Months)</option>
+                          <option value="Computer Aided Design (6 Months)">Computer Aided Design (6 Months)</option>
+                          <option value="Sustaineable Interior Design (6 Months)">Sustaineable Interior Design (6 Months)</option>
+                          <option value="Lighting Design (6 Months)">Lighting Design (6 Months)</option>
+                          <option value="Interior Design Specialization (6 Months)">Interior Design Specialization (6 Months)</option>
+                          <option value="Vastu">Vastu (6 Months)</option>
+                         
+                        </select>
+                      
+                      </div>
+                      
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <select style={{}} className="form-control">
-                        <option value={1}>Select Nearest Location</option>
-                        <option value={2}>Ghatkopar</option>
-                      </select>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <select style={{}} className='form-control'>
+                          <option value={1}>Select Nearest Location</option>
+                          <option value={2}>Ghatkopar</option>
+                        
+                        </select>
+                       
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="form-group">
-                      <textarea
-                        className="form-control"
-                        placeholder="Message"
-                        type="text"
-                        value={custMessage}
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          className="form-control"
+                          placeholder="Message"
+                          type="text"
+                          value={custMessage}
                         rows={6}
                         onChange={(e) => setCustMessage(e.target.value)}
-                      />
-                      {errors.custMessage && (
+                        />
+                            {errors.custMessage && (
                         <span className="error-text">{errors.custMessage}</span>
                       )}
+                      </div>
+                    </div>
+                 
+                    
+                    <div className="col-md-12">
+                      <button type="submit" onClick={ServForm}>Submit Now</button>
                     </div>
                   </div>
-
-                  <div className="col-md-12">
-                    <button type="submit" onClick={ServForm}>
-                      Submit Now
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
             </div>
           </div>
 

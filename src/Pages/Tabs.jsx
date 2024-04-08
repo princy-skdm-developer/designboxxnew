@@ -8,7 +8,7 @@ const Tabs = ({ filterCategory, tabsData }) => {
         <>
             <div className='Tabs-container'>
                 {/* <Zoom right cascade> */}
-                    <div className="text-center">
+                    <div className="text-center d-flex align-items-center justify-content-center">
                         {
                             tabsData.map((category, index) => {
                                 return (

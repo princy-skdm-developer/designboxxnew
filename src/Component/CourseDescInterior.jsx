@@ -9,13 +9,7 @@ const CourseDescInterior = [
     ServicePara1:
     "This one is the premier degree program of Interior Designing. During the program, you will develop an in-depth understanding of the tools and techniques which are used in Interior Designing. You will be interacting with our Subject Matter Experts, who have worked on projects that have been acclaimed both nationally and internationally.",  
             Slugs:"/interior-design",
-    ServicePara2:
-    " Ask yourself these questions “Do I have a perfect smile?” “Do I have a selfie-friendly smile?” “Does my smile get me compliments galore?.If yes, you are blessed with nature’s best gift. But if you are among those who shy to smile owing to misaligned, crooked, protruding, disjointed, irregular, gapped, stained and discolored teeth, you need to consider a smile makeover and bring back the confidence in your life.",      
-    ServicePara3:
-    "With revolutionary technology and expertise, it is very much possible. ",      
-    ServicePara4:
-    "OraMax dental clinic , Juhu specializes in smile makeovers to enhance your personality, boost your self-image and confidence and enable you to fall in love with your own smile. OraMax believe that you must love yourself to be able to create lasting impressions on others.",      
-
+   
 Course:[
     {
     Graphics:[

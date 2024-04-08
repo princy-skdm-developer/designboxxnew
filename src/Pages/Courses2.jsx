@@ -13,6 +13,7 @@ import illus from "../Images/icons/Adobe_Illustrator_CC_icon.svg.png";
 import photoshop from "../Images/icons/Adobe_Photoshop_CC_icon.svg.png";
 import cad from "../Images/icons/autocad-logo-69326D7728-seeklogo.com.png";
 import CourseDescInterior from "../Component/CourseDescInterior";
+import MetaTags from 'react-meta-tags';
 const Courses2 = () => {
   const search = useLocation();
   const Path = search.pathname;
@@ -64,11 +65,11 @@ const Courses2 = () => {
     setErrors(newErrors);
     return isValid;
   };
-  // ============ Mail function ==========
   const [custName, setCustName] = useState("");
   const [custEmail, setCustEmail] = useState("");
   const [custContact, setCustContact] = useState("");
   const [custMessage, setCustMessage] = useState("");
+  const [custSubject, setCustSubject] = useState("");
   // ============== Mail Print ======
   const ServForm = (e) => {
    
@@ -82,8 +83,12 @@ const Courses2 = () => {
         custContact +
         '</td></tr><tr><td style="text-align:left"><strong>Message:</strong></td><td style="text-align:left;color:#6e3b70">' +
         custMessage +
+        '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
+      
+        custSubject +
         '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
-      $.post(
+        <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
+        $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
           toEmail: "info@designboxx.in",
@@ -110,14 +115,16 @@ const Courses2 = () => {
   };
   return (
     <div>
-      <section
+     <section
         className="breadcrumb-area shadow dark text-center  text-light"
         style={{ backgroundImage: `url(${MyBackgroundImage})` }}
       >
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>{CourseDesc.ServiceName}</h1>
+
+              <h1>Designboxx Interior & Fashion Designing Institutes</h1>
+              <h2>{CourseDesc.ServiceName}</h2>
               {/* <ul className="breadcrumb">
           <li>
             <a href="#">
@@ -794,20 +801,20 @@ const Courses2 = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
-                        <select style={{}} className='form-control'>
-                          <option value={1}>Select Course</option>
-                          <option value={2}>B.sc in Fashion Designing (3 Years)</option>
-                          <option value={4}>Tailoring (6 Months)</option>
-                          <option value={5}>Fashion Illustration(6 Months)</option> 
-                          <option value={6}>Embroidery(6 Months)</option>
-                          <option value={7}>Fashion Styling(6 Months)</option> 
-                          <option value={3}>B.sc in Interior Designing (3 Years)</option>
-                          <option value={8}>Furniture Design & Layout (6 Months)</option>
-                          <option value={9}>Computer Aided Design (6 Months)</option>
-                          <option value={10}>Sustaineable Interior Design (6 Months)</option>
-                          <option value={11}>Lighting Design (6 Months)</option>
-                          <option value={12}>Interior Design Specialization (6 Months)</option>
-                          <option value={13}>Vastu (6 Months)</option>
+                        <select style={{}} className='form-control' onChange={(e) => setCustSubject(e.target.value)}>
+                          <option >Select Course</option>
+                          <option value="B.sc in Fashion Designing (3 Years)">B.sc in Fashion Designing (3 Years)</option>
+                          <option value="Tailoring (6 Months)">Tailoring (6 Months)</option>
+                          <option value="Fashion Illustration(6 Months)">Fashion Illustration(6 Months)</option> 
+                          <option value="Embroidery(6 Months)">Embroidery(6 Months)</option>
+                          <option value="Fashion Styling(6 Months)">Fashion Styling(6 Months)</option> 
+                          <option value="B.sc in Interior Designing (3 Years)">B.sc in Interior Designing (3 Years)</option>
+                          <option value="Furniture Design & Layout (6 Months)">Furniture Design & Layout (6 Months)</option>
+                          <option value="Computer Aided Design (6 Months)">Computer Aided Design (6 Months)</option>
+                          <option value="Sustaineable Interior Design (6 Months)">Sustaineable Interior Design (6 Months)</option>
+                          <option value="Lighting Design (6 Months)">Lighting Design (6 Months)</option>
+                          <option value="Interior Design Specialization (6 Months)">Interior Design Specialization (6 Months)</option>
+                          <option value="Vastu">Vastu (6 Months)</option>
                          
                         </select>
                       

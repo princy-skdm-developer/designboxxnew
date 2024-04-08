@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import Footer from "../Component/Footer";
-
+import { MetaTags } from "react-meta-tags";
 
 const About = () => {
   const [data, setData] = useState(TeamData);
@@ -57,6 +57,32 @@ const About = () => {
   };
   return (
     <div>
+             <MetaTags>
+        <title> Designing Institutes in Ghatkopar | Designboxx</title>
+        <meta name="title" content="Designing Institutes in Ghatkopar | Designboxx" />
+        <meta property="og:title" content="Designing Institutes in Ghatkopar | Designboxx" />
+       
+        <meta
+          name="description"
+          content="Discover the leading Designing Institutes in Ghatkopar & embark on a journey to unleash your creative potential. "
+        />
+
+        <meta
+          property="og:description"
+          content="Discover the leading Designing Institutes in Ghatkopar & embark on a journey to unleash your creative potential. "
+        />
+        <meta
+          name="keywords"
+          content="Best Interior & Fashion Designing Institutes,
+          Designing Institutes in Ghatkopar,
+          Fashion Designing Courses in Ghatkopar,
+          Interior Designing Courses in Ghatkkopar,
+          Designboxx Interior & Fashion Designing Institutes,
+           Top Designing Institutes near Ghatkopar"
+        />
+        <link rel="canonical" href="https://designboxx.in/designing-institutes-ghatkopar" />
+        <meta name="google-site-verification" content="ocFq8-RaV2esUMjJ0D2Puv0LSgd78Nqr57WJJgY8AJU" />
+      </MetaTags>
       <section
               className="breadcrumb-area shadow dark text-center text-light"
         style={{backgroundImage: `url(${MyBackgroundImage})` }}
@@ -64,7 +90,8 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>About Us</h1>
+              <h1>Designing Institutes in Ghatkopar</h1>
+              <h2>About Us</h2>
               {/* <ul className="breadcrumb">
           <li>
             <a href="#">
@@ -87,6 +114,7 @@ const About = () => {
            
             <div className="col-md-12 info">
             <div className="portfolio-items-area">
+             
         <h2>About Designboxx</h2>
    
               </div>
@@ -147,7 +175,7 @@ const About = () => {
             
                 <div class="col-md-5 col-12 pb-3">
                   <div class="ownerImg ">
-                    <img src={aboutImg} alt="" />
+                    <img src={aboutImg} alt="designing institute" />
 
                   </div>
                 
@@ -290,7 +318,7 @@ const About = () => {
             </div>
             <div class="col-md-5 col-12 pb-3 order-lg-2 order-1">
                   <div class="ownerImg " >
-                    <img src={aboutImg1} alt="" />
+                    <img src={aboutImg1} alt="best designing institute" />
 
                   </div>
                 

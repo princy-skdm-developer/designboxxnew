@@ -3,18 +3,15 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Pages 
 import Home from "./Pages/Home";
-import Courses2 from "./Pages/Courses2";
+
 import Studentswork from "./Pages/Studentswork";
-import Gallery from "./Pages/Gallery";
+
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import NavBarCom from  "./Component/NavBarCom";
 import Courses from './Pages/Courses';
-
-import Placement from './Pages/Placement';
-
-import CourseDescFashion from './Component/CourseDescFashion';
-import CourseDescInterior from './Component/CourseDescInterior';
+import Errorpage from "./Pages/Errorpage";
+import CourseData from './Component/CourseData';
 
 
 
@@ -24,28 +21,32 @@ function App() {
   const slugObjectsArray = [];
 
 // Iterate over the RoomList and extract Slugs as objects
-CourseDescFashion.forEach((Category) => {
-  if (Array.isArray(Category.Year)) {
-  Category.Year.forEach((year) => {
-    slugObjectsArray.push({ slug: year.Slugs });
+// CourseDescFashion.forEach((Category) => {
+//   if (Array.isArray(Category.Year)) {
+//   Category.Year.forEach((year) => {
+//     slugObjectsArray.push({ slug: year.Slugs });
     
-  });
-}
-});
+//   });
+// }
+// });
   return (
     <div className="App">
       <BrowserRouter>
       <NavBarCom/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='Studentswork' element={<Studentswork/>} />
-          <Route path='/Placement' element={<Placement/>} />
-          <Route path='/Gallery' element={<Gallery/>} />
-          <Route path='/interior-design' element={<Courses/>}/>
-          <Route path='/fashion-design' element={<Courses/>}/>
-          <Route path='/Courses2' element={<Courses2/>}/>
-          <Route path='/About' element={<About />} />
-          <Route path='/Contact' element={<Contact />} />
+          <Route path='designboxx-interior-fashion-designing-institutes' element={<Studentswork/>} />
+          <Route path='/top-designing-institutes-near-ghatkopar' element={<Contact/>} />
+          <Route path='/designing-institutes-ghatkopar' element={<About/>} />
+             {CourseData.map((route, index) => (
+          <Route
+            key={index}
+            exact
+            path={route.slug}
+            element={<Courses/>}
+          />
+        ))}
+          <Route path='/*' element={<Errorpage/>} />
         </Routes>
       </BrowserRouter>
     </div>

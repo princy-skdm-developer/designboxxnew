@@ -4,7 +4,9 @@ import "../Css/Item.css";
 const Items = ({ data }) => {
     return (
         <>
-            <div className='row'>
+        <section>
+          <div className='container'>
+          <div className='row'>
                 {
                     data.map((value) => {
                         const { id, CImage, CategoryName } = value
@@ -49,6 +51,9 @@ const Items = ({ data }) => {
                 }
 
             </div>
+          </div>
+        </section>
+         
 
             
         </>
