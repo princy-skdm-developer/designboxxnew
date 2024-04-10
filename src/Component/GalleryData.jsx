@@ -72,7 +72,7 @@ const GalleryData = [
    Cap:cert,
     Tname:"Gayatri Barshi",
     Desig:"Senior Faculty, Fashion Designing ",
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 2,
@@ -88,7 +88,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Gayatri Barshi",
     Desig:"Senior Faculty, Fashion Designing ",
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Mehwash Shaikh",
     Desig:"Senior Faculty, Fashion Designing ",
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 4,
@@ -120,7 +120,7 @@ const GalleryData = [
     Timage:mumbaiuniv,
     Tname:"Khushi Kothari",
     Desig:"Faculty, Fashion Designing ",
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   
   
@@ -135,7 +135,7 @@ const GalleryData = [
    Cap:cert,
     Desc:"These courses concentrate on furniture selection, arrangement, and creating functional yet aesthetically pleasing spaces",
     CImage:furniture,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 6,
@@ -149,7 +149,7 @@ const GalleryData = [
     Desc:"Learning AutoCAD software that is beneficial for interior designers. This is a Short course focusing on these programs' basics or specific functionalities.",
    
     CImage:cad,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 7,
@@ -161,7 +161,7 @@ const GalleryData = [
    Cap:cert,
     Desc:"Eco-friendly design practices and materials",
     CImage:sustain,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 8,
@@ -174,7 +174,7 @@ const GalleryData = [
     Desc:"Understanding lighting techniques, fixtures, and how lighting impacts the overall ambiance of a space",
   
     CImage:light,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 9,
@@ -187,7 +187,7 @@ const GalleryData = [
     Desc:"Focus on specific spaces like kitchens, bathrooms, or living rooms, delving into the specialized considerations for each area",
   
     CImage:spec,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
   {
     id: 10,
@@ -200,7 +200,7 @@ const GalleryData = [
     Desc:"Vastu Shastra is an ancient Indian science that harmonizes spaces with natural forces, aiming to enhance well-being and balance in life.",
   
     CImage:vastu,
-    Slugs:"/contact",
+    Slugs:"top-designing-institutes-near-ghatkopar",
   },
  
   

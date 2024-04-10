@@ -41,8 +41,8 @@ import interior19 from "../Images/icons/interior/New Project (2) (19).png";
 
 import fashionBanner from "../Images/Carousel and backgrounds -20240115T070201Z-001/fashionbanner.jpg";
 import interiorBanner from "../Images/Carousel and backgrounds -20240115T070201Z-001/interiorbanner.jpg";
-import bscfashion from "../docs/bscfashion.pdf"
-import bscintriar from "../docs/bscintriar.pdf"
+import bscfashion from "../docs/bscfashion.pdf";
+import bscintriar from "../docs/bscintriar.pdf";
 const CourseData = [
   {
     img:fashionBanner,
@@ -53,7 +53,7 @@ const CourseData = [
     CanonicalTag: "https://designboxx.in/fashion-designing-courses-ghatkopar",
     slug: "/fashion-designing-courses-ghatkopar",
     title: "B.SC in Fashion Design",
-    slug: "/fashion-design",
+   
     description:
       "This one is the premier degree program of Fashion Designing. During the program, you will develop an in-depth understanding of the tools and techniques which are used in Fashion Designing. You will be interacting with our Subject Matter Experts, who have worked on projects that have been acclaimed both nationally and internationally.",
     level: "B.Sc",

@@ -8,7 +8,7 @@ import {Link} from"react-router-dom"
 import CourseData from "./CourseData"; // Import course data JSON file
 
 const { Option } = Select;
-const EnquiryModal = ({donationValue}) => {
+const EnquiryModal = ({}) => {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -20,28 +20,19 @@ const EnquiryModal = ({donationValue}) => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  
 
 
-
-  const handleFormSubmit = () => {
-    if (selectedCourse) {
-      const brochureUrl = selectedCourse.documnetpath;
-      if (brochureUrl) {
-        // Create a link element
-        const link = document.createElement("a");
-        link.href = brochureUrl;
-        link.setAttribute("download", `${custSubject.title}_Brochure.pdf`);
-
-        // Append the link to the body
-        document.body.appendChild(link);
-
-        // Trigger the download
-        link.click();
-
-        // Clean up
-        document.body.removeChild(link);
-      }
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); 
+    const course = CourseData.find(c => c.title.toString() === selectedCourse);
+    if (!course) {
+      alert('Please select a course.');
+      return;
     }
+    ServForm();
+    // Trigger brochure download
+    window.location.href = course.documnetpath;
   };
   // -----------------image resizer--------------------
 
@@ -133,7 +124,7 @@ const EnquiryModal = ({donationValue}) => {
       );
 
       alert("Your Form has Submitted Our team will contact with You  soon.");
-      e.preventDefault();
+      // e.preventDefault();
       return false;
     }
   };
@@ -159,7 +150,7 @@ const EnquiryModal = ({donationValue}) => {
           <div className="row">
          
             <div className="col-12">
-            <form onFinish={handleFormSubmit}>
+            <form >
                   <div className="row">
                     <div className="col-md-12">
                       <div className="form-group">
@@ -206,21 +197,12 @@ const EnquiryModal = ({donationValue}) => {
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
-                      <Select 
-                      className="form-control"
-              placeholder="Select a course"
-              onChange={(value) =>
-                setSelectedCourse(
-                  CourseData.find((course) => course.title === value)
-                )
-              }
-            >
-              {CourseData.map((course) => (
-                <Option key={course.title} value={course.title}>
-                  {course.title}
-                </Option>
-              ))}
-            </Select>
+                      <select value={selectedCourse} className="form-control" onChange={e => setSelectedCourse(e.target.value)}>
+          <option value="">Select...</option>
+          {CourseData.map(course => (
+            <option key={course.id} value={course.title}>{course.title}</option>
+          ))}
+        </select>
                         {/* <select style={{}} className='form-control' >
                           <option >Select Course</option>
                           <option value="B.sc in Fashion Designing (3 Years)">B.sc in Fashion Designing (3 Years)</option>
@@ -269,7 +251,7 @@ const EnquiryModal = ({donationValue}) => {
                  
                     
                     <div className="col-md-12">
-                      <button type="submit" onClick={ServForm}  htmlType="submit">Submit Now</button>
+                      <Button className="btn-main" type="submit" onClick={handleFormSubmit}>Submit Now</Button>
                     </div>
                   </div>
                 </form>

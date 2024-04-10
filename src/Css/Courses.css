@@ -205,11 +205,11 @@ tr{
   top: 25px;
 }
 
-.course-detail .accordion .card-header a[aria-expanded=true]:after {
+.course-detail .accordion .-header a[aria-expanded=true]:after {
   content: "";
 }
 
-.course-detail .card {
+/* .course-detail .card {
   margin-top: 40px;
   border: 1px solid #eea808!important;
   box-shadow: 0 .3rem 1rem rgba(0,0,0,.15)!important;
@@ -255,7 +255,7 @@ tr{
 .course-detail .card .card-body .list-group-item {
   background-color: transparent;
   font-weight: 500;
-}
+} */
 
 @media(max-width: 767px) {
   .course-detail {
@@ -275,6 +275,8 @@ tr{
       font-size: 20px;
   }
 }
+
+
 
 .accordion-style-1 .accordion .card-header a:after {
   content: "";

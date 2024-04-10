@@ -136,7 +136,8 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1> Top Designing Institute near Ghatkopar</h1>
+              <h1 className="d-none"> Top Designing Institute near Ghatkopar</h1>
+            <h2>Contact Us</h2>
               {/* <ul className="breadcrumb">
           <li>
             <a href="#">

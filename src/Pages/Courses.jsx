@@ -117,7 +117,7 @@ const Courses = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>{data && data.h1}</h1>
+              <h1 className="d-none">{data && data.h1}</h1>
               <h2>{data && data.title}</h2>
             </div>
           </div>

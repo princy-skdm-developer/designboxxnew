@@ -3653,6 +3653,7 @@ font-weight: 600;
   background-color: #000;
   color: #fff;
   font-weight: 700;
+  height:50px;
   padding: .7rem 2.5rem;
 }
 .list-category div {
@@ -3944,7 +3945,7 @@ font-weight: 600;
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
-.card-text
+/* .card-text
 {
   font-size:13px;
-}
+} */

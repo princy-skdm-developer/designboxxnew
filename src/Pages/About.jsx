@@ -90,7 +90,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>Designing Institutes in Ghatkopar</h1>
+              <h1 className="d-none">Designing Institutes in Ghatkopar</h1>
               <h2>About Us</h2>
               {/* <ul className="breadcrumb">
           <li>

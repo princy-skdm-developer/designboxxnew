@@ -5,6 +5,7 @@ import $ from 'jquery';
 import GalleryData from '../Component/GalleryData';
 import EnquiryModal from "../Component/EnquiryModal";
 import "../Css/Home.css";
+import "../Css/Item.css";
 import {Link} from "react-router-dom";
 import aboutImg from "../Images/Carousel and backgrounds -20240115T070201Z-001/Carousel and backgrounds/RJ College/1200 x 794.jpg";
 import fashion from "../Images/1200 x 794 (1).jpg";
@@ -220,7 +221,7 @@ const Home = () => {
         style={{ padding: 0, overflow: "hidden" }}
       >
         <div className="row no-gutters">
-          <h1 textAlign="center">Best Interior & Fashion Designing Institute</h1>
+          <h1 textAlign="center" className="d-none">Best Interior & Fashion Designing Institutes</h1>
           <div className="col-lg-6 col-12 align-self-center order-lg-1 order-2">
             <div className="slider-sidebar">
               <div className="row">

@@ -62,7 +62,7 @@ const Studentswork = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1> Interior & Fashion Designing Institute</h1>
+              <h1 className="d-none"> Interior & Fashion Designing Institute</h1>
               <h2>Life At Designboxx</h2>
               {/* <ul className="breadcrumb">
           <li>
