@@ -86,7 +86,7 @@ const Courses2 = () => {
         '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
       
         custSubject +
-        '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
+        '</td></tr></table><p style="font-weight:700">Enquiry from website portal</p></div></body></html>';
         <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
         $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",

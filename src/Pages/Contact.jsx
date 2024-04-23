@@ -72,11 +72,12 @@ const Contact = () => {
         '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
       
         custSubject +
-        '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
+        '</td></tr></table><p style="font-weight:700">Enquiry from website portal<span style="text-align:left;color:#6e3b70;padding-left:5px"></span>.</p></div></body></html>';
         <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
         $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
+          // toEmail: "princygrwl4@gmail.com",
           toEmail: "info@designboxx.in",
           fromEmail: "skdmlead@gmail.com",
           bccMail: "skdmlead@gmail.com",
@@ -93,9 +94,12 @@ const Contact = () => {
           console.log("name:" + custEmail);
         }
       );
+      
 
       alert("Your Form has Submitted Our team will contact with You  soon.");
+      window.location.reload();
       e.preventDefault();
+      
       return false;
     }
   };
@@ -178,9 +182,11 @@ const Contact = () => {
                 <div className="info">
                   <h4>Address</h4>
                   <span>
-                    1st Floor,Suchita & Orange Business Suite, 22, Hirachand
+                  RJ College-New Campus<br/>
+                3WQ5+63W, Bhatwadi, Kapol wadi, Ghatkopar West, Mumbai, Maharashtra 400086
+                    {/* 1st Floor,Suchita & Orange Business Suite, 22, Hirachand
                     Desai Rd, भट्टवाडी, CGS Colony, Pant Nagar, Ghatkopar West,
-                    Mumbai, Maharashtra 400086
+                    Mumbai, Maharashtra 400086 */}
                   </span>
                 </div>
               </div>
@@ -208,8 +214,9 @@ const Contact = () => {
             <div className="col-md-6 maps">
               <h3>Our Location</h3>
               <div className="google-maps">
+            
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4480296950455!2d72.9058995751884!3d19.087991251596083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62d32b68d07%3A0x5eefe12761e23a51!2zMjIsIEhpcmFjaGFuZCBEZXNhaSBSZCwg4KSt4KSf4KWN4KSf4KS14KS-4KSh4KWALCBDR1MgQ29sb255LCBQYW50IE5hZ2FyLCBHaGF0a29wYXIgV2VzdCwgTXVtYmFpLCBNYWhhcmFzaHRyYSA0MDAwODY!5e0!3m2!1sen!2sin!4v1710759886059!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d393.36838379292595!2d72.9073839!3d19.0881171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7d2d58489f7%3A0xbaee29f08e202004!2sO%26%20S%20Business%20Suites!5e1!3m2!1sen!2sin!4v1712730964242!5m2!1sen!2sin"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -225,7 +232,7 @@ const Contact = () => {
                   Fill the form so we can get to know you and your needs better.
                 </p>
               </div>
-              <form action="#">
+              <form action="#" id="myform">
                   <div className="row">
                     <div className="col-md-12">
                       <div className="form-group">

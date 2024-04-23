@@ -105,11 +105,11 @@ const Footer = () => {
               <li>
                 <i className="fa fa-map" />
                 <p>
-                 
-
-
+                RJ College-New Campus<br/>
+                3WQ5+63W, Bhatwadi, Kapol wadi, Ghatkopar West, Mumbai, Maharashtra 400086
+{/* 
                 1st Floor,Suchita & Orange Business Suite,
-22, Hirachand Desai Rd, भट्टवाडी, CGS Colony, Pant Nagar, Ghatkopar West, Mumbai, Maharashtra 400086<br/>
+22, Hirachand Desai Rd, भट्टवाडी, CGS Colony, Pant Nagar, Ghatkopar West, Mumbai, Maharashtra 400086<br/> */}
 
                 </p>
               </li>

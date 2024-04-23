@@ -20,19 +20,31 @@ const EnquiryModal = ({}) => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-  
+  function downloadFile() {
+    var fileUrl = course.documnetpath;
+    var downloadLink = document.createElement("a");
+    downloadLink.href = fileUrl;
+    downloadLink.download = "Brochure.ext"; // Change "desired_filename.ext" to the desired filename
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+}
 
-
+  const course = CourseData.find(c => c.title.toString() === selectedCourse);
   const handleFormSubmit = (e) => {
     e.preventDefault(); 
-    const course = CourseData.find(c => c.title.toString() === selectedCourse);
+    
     if (!course) {
       alert('Please select a course.');
       return;
     }
     ServForm();
+    
     // Trigger brochure download
-    window.location.href = course.documnetpath;
+    
+    // window.location.href = course.documnetpath;
+    
+
   };
   // -----------------image resizer--------------------
 
@@ -101,13 +113,14 @@ const EnquiryModal = ({}) => {
         '</td></tr><tr><td style="text-align:left"><strong>Course:</strong></td><td style="text-align:left;color:#6e3b70">' +
       
         custSubject +
-        '</td></tr></table><p style="font-weight:700">Best regards,<br>Your Team at<span style="text-align:left;color:#6e3b70;padding-left:5px">Shree Krishna Digital Marketing</span>.</p></div></body></html>';
+        '</td></tr></table><p style="font-weight:700">Enquiry<br>from website portal<span style="text-align:left;color:#6e3b70;padding-left:5px"></span>.</p></div></body></html>';
         <tr><td style="text-align:left"><strong>Subject:</strong></td><td style="text-align:left">${custSubject}</td></tr>
         $.post(
         "https://skdm.in/server/v1/send_lead_mail.php",
         {
           toEmail: "princygrwl4@gmail.com",
-          fromEmail: "skdmlead@gmail.com",
+          // toEmail: "info@designboxx.in",
+          fromEmail:"skdmlead@gmail.com",
           bccMail: "skdmlead@gmail.com",
           mailSubject: "New Customer Lead",
           mailBody: body,
@@ -124,8 +137,13 @@ const EnquiryModal = ({}) => {
       );
 
       alert("Your Form has Submitted Our team will contact with You  soon.");
+
+      document.getElementById("downloadButton").addEventListener("click", downloadFile);
+      // window.location.reload();
+    
       // e.preventDefault();
       return false;
+      
     }
   };
   // email
@@ -251,7 +269,7 @@ const EnquiryModal = ({}) => {
                  
                     
                     <div className="col-md-12">
-                      <Button className="btn-main" type="submit" onClick={handleFormSubmit}>Submit Now</Button>
+                      <Button id="downloadButton" className="btn-main" type="submit" onClick={handleFormSubmit}>Submit Now</Button>
                     </div>
                   </div>
                 </form>

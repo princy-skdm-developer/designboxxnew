@@ -58,7 +58,7 @@ const CourseData = [
       "This one is the premier degree program of Fashion Designing. During the program, you will develop an in-depth understanding of the tools and techniques which are used in Fashion Designing. You will be interacting with our Subject Matter Experts, who have worked on projects that have been acclaimed both nationally and internationally.",
     level: "B.Sc",
     Duration: "36 months",
-    Eligibility: "12th Grade",
+    Eligibility: "12th Pass and Equivalent",
     documnetpath:bscfashion,
     icons: [
       fashion,
@@ -199,7 +199,7 @@ const CourseData = [
       "This one is the premier degree program of Interior Designing. During the program, you will develop an in-depth understanding of the tools and techniques which are used in Interior Designing. You will be interacting with our Subject Matter Experts, who have worked on projects that have been acclaimed both nationally and internationally.",
     level: "B.Sc",
     Duration: "36 months",
-    Eligibility: "12th Grade",
+    Eligibility: "12th Pass and Equivalent",
     documnetpath:bscintriar,
     icons: [
       interior,
